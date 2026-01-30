@@ -146,6 +146,25 @@ export default function QuotePage() {
         </div>
       </section>
 
+      {/* Urgent Needs Section */}
+      <section className="py-10 bg-[#0066FF] text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold font-playfair mb-4 italic">
+            Need Catering Urgently?
+          </h2>
+          <p className="text-lg mb-6">
+            Don't have time for the form? Call us directly!
+          </p>
+          
+          <a 
+            href="tel:+16473408001" 
+            className="inline-block bg-white text-[#0066FF] px-8 py-3 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg"
+          >
+            📞 Call +1 (647) 340-8001
+          </a>
+        </div>
+      </section>
+
       {/* Quote Form Section */}
       <section id="form" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -873,39 +892,6 @@ export default function QuotePage() {
               <h3 className="text-xl font-bold mb-2">Q: Do you charge for quotes?</h3>
               <p className="text-gray-700">
                 <strong>A:</strong> No, all quotes are completely free with no obligation.
-              </p>
-            </div>
-          </div>
-        </div>
-      </AnimatedSection>
-
-      {/* Urgent Needs Section */}
-      <AnimatedSection className="py-16 bg-[#0066FF] text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-6 italic">
-            Need Catering Urgently?
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Don't have time for the form? Call us directly!
-          </p>
-          
-          <div className="max-w-2xl mx-auto bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-            <div className="mb-6">
-              <a 
-                href="tel:+16473408001" 
-                className="inline-block bg-white text-[#0066FF] px-10 py-5 rounded-lg text-2xl font-bold hover:bg-gray-100 transition-all shadow-lg hover:scale-105"
-              >
-                📞 Call +1 (647) 340-8001
-              </a>
-            </div>
-            
-            <div className="text-left max-w-md mx-auto space-y-2">
-              <h3 className="font-bold text-xl mb-3">Office hours:</h3>
-              <p>• Monday - Friday: 8 AM - 8 PM</p>
-              <p>• Saturday: 9 AM - 6 PM</p>
-              <p>• Sunday: 10 AM - 5 PM</p>
-              <p className="mt-4 font-semibold">
-                <strong>Emergency/urgent:</strong> Available 7 days for same-day and next-day catering needs.
               </p>
             </div>
           </div>
