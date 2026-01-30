@@ -5,6 +5,8 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { AnimatedSection } from '@/components/ui/animated-section'
 import { GyroButton } from '@/components/ui/gyro-button'
+import { LeadForm } from '@/components/forms/LeadForm'
+import { RelatedCateringServices } from '@/components/RelatedCateringServices'
 
 export default function CorporateCateringPage() {
   return (
@@ -71,6 +73,9 @@ export default function CorporateCateringPage() {
         </div>
       </section>
 
+      {/* Lead Form */}
+      <LeadForm />
+
       {/* Elevate Your Corporate Event */}
       <AnimatedSection className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
@@ -79,10 +84,10 @@ export default function CorporateCateringPage() {
           </h2>
           <div className="space-y-4 text-lg text-gray-700">
             <p>
-              When your business reputation is on the line, you need catering that exceeds expectations. <strong>Gyro City</strong> delivers authentic Greek cuisine with the professionalism Toronto's corporate sector demands.
+              When your business reputation is on the line, you need catering that exceeds expectations. <strong>Gyro City</strong> delivers authentic Greek cuisine with the professionalism Toronto's corporate sector demands. <Link href="/menu" className="text-[#0066FF] hover:underline font-semibold">View our corporate catering menu</Link> to explore premium options.
             </p>
             <p>
-              From intimate executive lunches to large-scale conferences, we combine exceptional Mediterranean flavors with seamless service that lets you focus on your business objectives.
+              From intimate executive lunches to large-scale conferences, we combine exceptional Mediterranean flavors with seamless service that lets you focus on your business objectives. For smaller daily needs, our <Link href="/catering/office" className="text-[#0066FF] hover:underline">office catering service</Link> is perfect for regular team lunches.
             </p>
             <p className="text-center font-semibold text-xl text-[#0066FF] mt-6">
               Trusted by Toronto's leading corporations, law firms, and financial institutions.
@@ -521,6 +526,29 @@ export default function CorporateCateringPage() {
               <h3 className="font-bold text-lg mb-2">Do you offer tastings for large events?</h3>
               <p className="text-gray-700">Yes, complimentary tastings for events 100+ people or corporate accounts. Paid tastings available for others ($100, credited to event).</p>
             </div>
+          </div>
+        </div>
+      </AnimatedSection>
+
+      {/* Related Catering Services */}
+      <RelatedCateringServices currentPage="corporate" />
+
+      {/* Need Help CTA */}
+      <AnimatedSection className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center max-w-3xl">
+          <h2 className="text-3xl font-bold font-playfair mb-4 text-black">
+            Need Help Planning Your Corporate Event?
+          </h2>
+          <p className="text-lg text-gray-700 mb-6">
+            Our corporate catering specialists have years of experience serving Toronto's top businesses. We can help you design the perfect menu, coordinate with your venue, and ensure flawless execution. <Link href="/quote" className="text-[#0066FF] hover:underline font-semibold">Request a custom quote</Link> or speak with our team directly.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link href="/contact" className="bg-[#0066FF] text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all">
+              Contact Us
+            </Link>
+            <Link href="tel:+16473408001" className="bg-white text-[#0066FF] border-2 border-[#0066FF] px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-all">
+              Call +1 (647) 340-8001
+            </Link>
           </div>
         </div>
       </AnimatedSection>

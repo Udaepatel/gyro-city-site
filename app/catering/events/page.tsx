@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { AnimatedSection } from '@/components/ui/animated-section'
+import { LeadForm } from '@/components/forms/LeadForm'
+import { RelatedCateringServices } from '@/components/RelatedCateringServices'
 
 export default function EventCateringPage() {
   return (
@@ -67,6 +69,9 @@ export default function EventCateringPage() {
           </p>
         </div>
       </section>
+
+      {/* Lead Form */}
+      <LeadForm />
 
       {/* Why Choose Section */}
       <AnimatedSection className="py-16 bg-white">
@@ -999,32 +1004,24 @@ export default function EventCateringPage() {
         </div>
       </AnimatedSection>
 
-      {/* Related Services Section */}
+      {/* Related Catering Services */}
+      <RelatedCateringServices currentPage="events" />
+
+      {/* Need Help CTA */}
       <AnimatedSection className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold font-playfair mb-8 text-center text-black">
-            More Catering Solutions
+        <div className="container mx-auto px-4 text-center max-w-3xl">
+          <h2 className="text-3xl font-bold font-playfair mb-4 text-black">
+            Need Help Planning Your Event?
           </h2>
-          
-          <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            <Link href="/catering/office" className="bg-white border-2 border-[#0066FF] rounded-xl p-6 hover:shadow-lg transition-all">
-              <h3 className="text-lg font-bold mb-2 text-black">Office Catering</h3>
-              <p className="text-sm text-gray-600">Daily lunch delivery for your Toronto team</p>
+          <p className="text-lg text-gray-700 mb-6">
+            Our event catering team is here to make your celebration stress-free and delicious. From choosing the perfect items from <Link href="/menu" className="text-[#0066FF] hover:underline font-semibold">our catering menu</Link> to coordinating with your venue, we handle all the details. <Link href="/quote" className="text-[#0066FF] hover:underline font-semibold">Get a custom quote</Link> or call us for a friendly consultation.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link href="/contact" className="bg-[#0066FF] text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all">
+              Contact Us
             </Link>
-
-            <Link href="/catering/corporate" className="bg-white border-2 border-[#0066FF] rounded-xl p-6 hover:shadow-lg transition-all">
-              <h3 className="text-lg font-bold mb-2 text-black">Corporate Catering</h3>
-              <p className="text-sm text-gray-600">Professional business events & conferences</p>
-            </Link>
-
-            <Link href="/catering/funeral" className="bg-white border-2 border-[#0066FF] rounded-xl p-6 hover:shadow-lg transition-all">
-              <h3 className="text-lg font-bold mb-2 text-black">Funeral Catering</h3>
-              <p className="text-sm text-gray-600">Compassionate service for difficult times</p>
-            </Link>
-
-            <Link href="/menu" className="bg-white border-2 border-[#0066FF] rounded-xl p-6 hover:shadow-lg transition-all">
-              <h3 className="text-lg font-bold mb-2 text-black">View Full Menu</h3>
-              <p className="text-sm text-gray-600">Browse our complete catering menu</p>
+            <Link href="tel:+16473408001" className="bg-white text-[#0066FF] border-2 border-[#0066FF] px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-all">
+              Call +1 (647) 340-8001
             </Link>
           </div>
         </div>

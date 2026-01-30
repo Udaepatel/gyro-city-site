@@ -50,20 +50,20 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center bg-[#0066FF] text-white overflow-hidden">
-        <div className="container mx-auto px-4 py-20 grid md:grid-cols-2 gap-16 items-center relative z-10">
+      <section className="relative h-screen flex items-center bg-[#0066FF] text-white overflow-hidden">
+        <div className="container mx-auto px-4 py-12 grid md:grid-cols-[45%_55%] gap-8 items-center relative z-10 h-full">
           {/* Left: Text */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="space-y-8"
+            className="space-y-6"
           >
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-playfair leading-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-playfair leading-tight">
               Toronto's Authentic Greek Catering, Delivered.
             </h1>
             
-            <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-xl">
+            <p className="text-lg md:text-xl text-white/90 leading-relaxed">
               Handcrafted gyros and Mediterranean classics for GTA events. Same-day delivery available for catering inquiries today.
             </p>
 
@@ -82,14 +82,14 @@ export default function Home() {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-            className="relative h-[600px] flex items-center justify-center hidden md:flex"
+            className="relative h-full flex items-center justify-center hidden md:flex"
           >
-            <div className="relative w-full h-full flex items-center justify-center">
+            <div className="relative w-full h-[85%] flex items-center justify-center">
               <Image 
-                src="/catering-trays.jpg" 
-                alt="Professional Greek catering trays with rice pilaf, grilled chicken shawarma, and golden falafel - Toronto catering delivery" 
+                src="/hero-catering-trays-transparent.png" 
+                alt="Professional Greek catering trays with rice pilaf, grilled chicken, and golden falafel with decorative flowers - Toronto catering delivery" 
                 fill
-                className="object-contain"
+                className="object-contain drop-shadow-2xl scale-110"
                 priority
               />
             </div>
@@ -100,6 +100,11 @@ export default function Home() {
       {/* Social Proof Section */}
       <AnimatedSection className="py-20 bg-white">
         <div className="container mx-auto px-4">
+          <div className="mb-8 text-center">
+            <Link href="/catering" className="inline-block bg-[#0066FF] text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all shadow-lg mb-4">
+              View All Catering Services →
+            </Link>
+          </div>
           <div className="mb-16 text-center">
             <h2 className="text-4xl md:text-5xl font-bold font-playfair italic text-black mb-4">
               Loved by Toronto Businesses
@@ -269,36 +274,62 @@ export default function Home() {
         </div>
       </AnimatedSection>
 
-      {/* How It Works Section */}
+      {/* CTA Section - Let Us Take Lunch Off Your Plate */}
       <AnimatedSection className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-5xl md:text-6xl font-bold text-black text-center mb-16 uppercase">
-            How It Works
-          </h2>
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+            {/* Left: Text Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="space-y-6"
+            >
+              <div className="text-[#0066FF] text-sm md:text-base font-bold uppercase tracking-wider mb-4">
+                The Best Office Catering in Toronto Since 2015
+              </div>
+              
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight font-playfair">
+                Because you're busy teaching and team building, designing and number crunching, pitching and programming, we have you covered.
+              </h2>
+              
+              <h3 className="text-3xl md:text-4xl font-bold text-black font-playfair">
+                Let us take lunch off your plate.
+              </h3>
+              
+              <div className="flex flex-wrap gap-4 pt-4">
+                <Link 
+                  href="/quote"
+                  className="bg-[#0066FF] text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-[#0052CC] transition-all duration-200 shadow-lg"
+                >
+                  Get a Quote
+                </Link>
+                <a 
+                  href="tel:647-548-8740"
+                  className="bg-transparent border-2 border-[#0066FF] text-[#0066FF] px-10 py-4 rounded-lg text-lg font-semibold hover:bg-[#0066FF] hover:text-white transition-all duration-200 shadow-lg"
+                >
+                  Call Now
+                </a>
+              </div>
+            </motion.div>
 
-          <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {[
-              { step: "1", title: "Choose Your Menu", icon: "📋", desc: "Select from our authentic Greek dishes" },
-              { step: "2", title: "Request Quote", icon: "💬", desc: "Tell us your event details" },
-              { step: "3", title: "Confirm Order", icon: "✓", desc: "We'll finalize your catering" },
-              { step: "4", title: "Enjoy Fresh Food", icon: "🥙", desc: "Delivered hot and ready to serve" },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.15, duration: 0.5 }}
-                className="text-center bg-gray-50 p-8 rounded-lg border-2 border-gray-200"
-              >
-                <div className="text-6xl mb-4">{item.icon}</div>
-                <div className="w-16 h-16 bg-[#0066FF] text-white rounded-full flex items-center justify-center font-bold text-2xl mx-auto mb-4">
-                  {item.step}
-                </div>
-                <h3 className="text-xl font-bold text-black mb-3">{item.title}</h3>
-                <p className="text-gray-700">{item.desc}</p>
-              </motion.div>
-            ))}
+            {/* Right: Image */}
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="relative h-[500px] md:h-[600px]"
+            >
+              <Image 
+                src="/souvlaki-plate.jpg"
+                alt="Greek souvlaki skewers with rice pilaf, Greek salad, and grilled shrimp on traditional plate"
+                fill
+                className="object-cover rounded-2xl shadow-2xl"
+                priority
+              />
+            </motion.div>
           </div>
         </div>
       </AnimatedSection>
@@ -306,18 +337,16 @@ export default function Home() {
       {/* Why Choose Us Section */}
       <AnimatedSection className="py-20 bg-[#0066FF] text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-5xl md:text-6xl font-bold text-white text-center mb-16 uppercase">
+          <h2 className="text-5xl md:text-6xl font-bold text-white text-center mb-16 uppercase tracking-wider">
             Why Choose Gyro City?
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto mb-12">
             {[
-              { icon: "🥙", title: "Authentic Greek", desc: "Traditional recipes passed down through generations" },
-              { icon: "🚚", title: "Reliable Delivery", desc: "On-time delivery across downtown Toronto" },
-              { icon: "🌱", title: "Dietary Options", desc: "Halal, vegetarian, and vegan choices available" },
-              { icon: "💼", title: "Corporate Specialist", desc: "Experienced in business events and office catering" },
-              { icon: "❄️", title: "Fresh Never Frozen", desc: "All ingredients prepared fresh daily" },
-              { icon: "🎉", title: "Event Experts", desc: "From intimate gatherings to large celebrations" },
+              { title: "Authentic Greek", desc: "Traditional recipes passed down through generations" },
+              { title: "Fresh Never Frozen", desc: "All ingredients prepared fresh daily" },
+              { title: "Reliable Delivery", desc: "On-time delivery across downtown Toronto" },
+              { title: "Dietary Options", desc: "Halal, vegetarian, and vegan choices available" },
             ].map((feature, i) => (
               <motion.div
                 key={i}
@@ -325,14 +354,32 @@ export default function Home() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.4 }}
-                className="text-center p-8 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20"
+                className="text-center p-8 rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 hover:bg-white/20 hover:-translate-y-2 transition-all duration-300 shadow-lg"
               >
-                <div className="text-6xl mb-4">{feature.icon}</div>
                 <h3 className="text-2xl font-bold text-white mb-3">{feature.title}</h3>
-                <p className="text-white/90">{feature.desc}</p>
+                <p className="text-white/95 text-base leading-relaxed">{feature.desc}</p>
               </motion.div>
             ))}
           </div>
+
+          {/* Full-width food image */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-7xl mx-auto mt-8"
+          >
+            <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+              <Image 
+                src="/gyro-food-showcase.jpg"
+                alt="Fresh Greek bowl with grilled chicken and authentic gyro wrap - Gyro City catering"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </motion.div>
         </div>
       </AnimatedSection>
 

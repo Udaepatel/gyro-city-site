@@ -4,6 +4,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { AnimatedSection } from '@/components/ui/animated-section'
+import { LeadForm } from '@/components/forms/LeadForm'
+import { RelatedCateringServices } from '@/components/RelatedCateringServices'
 
 export default function OfficeCateringPage() {
   return (
@@ -76,6 +78,9 @@ export default function OfficeCateringPage() {
         </div>
       </section>
 
+      {/* Lead Form */}
+      <LeadForm />
+
       {/* Hero Intro */}
       <AnimatedSection className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl text-center">
@@ -84,7 +89,7 @@ export default function OfficeCateringPage() {
           </h2>
           <div className="space-y-4 text-lg text-gray-700">
             <p>
-              Tired of the same boring office lunches? <strong>Gyro City</strong> brings authentic Greek flavors straight to your downtown Toronto office. From classic gyros and souvlaki to fresh Mediterranean salads, we make feeding your team easy, delicious, and stress-free.
+              Tired of the same boring office lunches? <strong>Gyro City</strong> brings authentic Greek flavors straight to your downtown Toronto office. From classic gyros and souvlaki to fresh Mediterranean salads, we make feeding your team easy, delicious, and stress-free. <Link href="/menu" className="text-[#0066FF] hover:underline font-semibold">Browse our complete catering menu</Link> to see all available options.
             </p>
           </div>
         </div>
@@ -167,6 +172,9 @@ export default function OfficeCateringPage() {
                   <li>• Setup at your office</li>
                   <li>• Packaging for easy cleanup</li>
                 </ul>
+                <p className="text-sm text-gray-600 mt-3">
+                  Need catering for a larger event? Check out our <Link href="/catering/corporate" className="text-[#0066FF] hover:underline">corporate catering services</Link>.
+                </p>
               </div>
             </div>
 
@@ -910,6 +918,29 @@ export default function OfficeCateringPage() {
         </div>
       </AnimatedSection>
 
+      {/* Related Catering Services */}
+      <RelatedCateringServices currentPage="office" />
+
+      {/* Need Help CTA */}
+      <AnimatedSection className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center max-w-3xl">
+          <h2 className="text-3xl font-bold font-playfair mb-4 text-black">
+            Need Help Planning Your Office Catering?
+          </h2>
+          <p className="text-lg text-gray-700 mb-6">
+            Our catering specialists are here to help you find the perfect menu for your team. Whether you need help with <Link href="/menu" className="text-[#0066FF] hover:underline">our catering menu</Link>, dietary accommodations, or scheduling, we're just a call away.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link href="/contact" className="bg-[#0066FF] text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all">
+              Contact Us
+            </Link>
+            <Link href="tel:+16473408001" className="bg-white text-[#0066FF] border-2 border-[#0066FF] px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-all">
+              Call +1 (647) 340-8001
+            </Link>
+          </div>
+        </div>
+      </AnimatedSection>
+
       {/* Final CTA */}
       <AnimatedSection className="py-20 bg-[#0066FF] text-white">
         <div className="container mx-auto px-4 text-center">
@@ -959,9 +990,9 @@ export default function OfficeCateringPage() {
               <p className="text-sm text-gray-600">Browse our complete Greek catering menu</p>
             </Link>
 
-            <Link href="/blog" className="bg-gray-50 border-2 border-gray-200 hover:border-[#0066FF] rounded-xl p-6 transition-all">
-              <h3 className="font-bold text-lg mb-2">Catering Blog</h3>
-              <p className="text-sm text-gray-600">Tips for office lunch planning and team meal ideas</p>
+            <Link href="/catering" className="bg-gray-50 border-2 border-gray-200 hover:border-[#0066FF] rounded-xl p-6 transition-all">
+              <h3 className="font-bold text-lg mb-2">All Catering Services</h3>
+              <p className="text-sm text-gray-600">Explore our complete catering options for every occasion</p>
             </Link>
           </div>
         </div>

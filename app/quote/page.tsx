@@ -597,7 +597,13 @@ export default function QuotePage() {
                   >
                     GET MY FREE QUOTE →
                   </button>
-                  <p className="text-sm text-gray-500 text-center mt-4">
+                  <p className="text-sm text-gray-600 text-center mt-4">
+                    By submitting this form, you agree to our{' '}
+                    <Link href="/terms" className="text-[#0066FF] hover:underline font-semibold">Terms of Service</Link>
+                    {' '}and{' '}
+                    <Link href="/privacy" className="text-[#0066FF] hover:underline font-semibold">Privacy Policy</Link>.
+                  </p>
+                  <p className="text-sm text-gray-500 text-center mt-2">
                     We'll respond within 24 hours. For urgent requests, call us at{' '}
                     <a href="tel:+16473408001" className="text-[#0066FF] hover:underline font-semibold">
                       +1 (647) 340-8001

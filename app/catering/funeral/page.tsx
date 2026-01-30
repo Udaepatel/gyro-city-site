@@ -4,6 +4,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { AnimatedSection } from '@/components/ui/animated-section'
+import { LeadForm } from '@/components/forms/LeadForm'
+import { RelatedCateringServices } from '@/components/RelatedCateringServices'
 
 export default function FuneralCateringPage() {
   return (
@@ -73,6 +75,9 @@ export default function FuneralCateringPage() {
         </div>
       </section>
 
+      {/* Lead Form */}
+      <LeadForm />
+
       {/* Supporting Families Section */}
       <AnimatedSection className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
@@ -81,7 +86,7 @@ export default function FuneralCateringPage() {
           </h2>
           <div className="space-y-4 text-lg text-gray-700">
             <p>
-              Losing a loved one is never easy. At <strong>Gyro City</strong>, we understand the importance of providing comfort through food while honoring the memory of those who've passed. Our compassionate funeral catering service takes the burden of meal planning off your shoulders, allowing you to focus on what matters most - being with family and friends.
+              Losing a loved one is never easy. At <strong>Gyro City</strong>, we understand the importance of providing comfort through food while honoring the memory of those who've passed. Our compassionate funeral catering service takes the burden of meal planning off your shoulders, allowing you to focus on what matters most - being with family and friends. <Link href="/menu" className="text-[#0066FF] hover:underline font-semibold">Browse our menu</Link> for comforting Greek dishes, or <Link href="/contact" className="text-[#0066FF] hover:underline font-semibold">contact us</Link> and we'll help you plan.
             </p>
             <p className="text-center font-semibold text-xl text-[#0066FF] mt-6">
               Serving Toronto families with dignity, respect, and care since 2014.
@@ -865,6 +870,29 @@ export default function FuneralCateringPage() {
           <div className="text-center mt-10">
             <Link href="/quote" className="inline-block bg-[#0066FF] text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all shadow-lg">
               Start Planning →
+            </Link>
+          </div>
+        </div>
+      </AnimatedSection>
+
+      {/* Related Catering Services */}
+      <RelatedCateringServices currentPage="funeral" />
+
+      {/* Need Help CTA */}
+      <AnimatedSection className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 text-center max-w-3xl">
+          <h2 className="text-3xl font-bold font-playfair mb-4 text-black">
+            We're Here to Help
+          </h2>
+          <p className="text-lg text-gray-700 mb-6">
+            Planning a funeral reception is challenging. Our compassionate team is available 7 days a week to help with menu planning, coordination with funeral homes, and all the details. Whether you need help selecting from <Link href="/menu" className="text-[#0066FF] hover:underline font-semibold">our menu</Link> or have questions about service, we're here for you. <Link href="/quote" className="text-[#0066FF] hover:underline font-semibold">Request service</Link> or call us anytime.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link href="tel:+16473408001" className="bg-[#0066FF] text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all">
+              Call +1 (647) 340-8001
+            </Link>
+            <Link href="/contact" className="bg-white text-[#0066FF] border-2 border-[#0066FF] px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-all">
+              Email Us
             </Link>
           </div>
         </div>
