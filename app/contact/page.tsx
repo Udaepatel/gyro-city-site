@@ -14,7 +14,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <AnimatedSection className="bg-gradient-to-br from-gyro-navy via-blue-900 to-gyro-navy text-white py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold font-playfair mb-6">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-playfair leading-tight mb-6">
             Get in Touch
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
