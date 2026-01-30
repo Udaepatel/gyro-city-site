@@ -53,12 +53,23 @@ const menuCategories = [
 export default function MenuPage() {
   return (
     <main className="min-h-screen bg-gray-100">
+      {/* Moving Text Marquee */}
+      <div className="bg-white text-black py-3 overflow-hidden border-b border-gray-200">
+        <div className="whitespace-nowrap animate-marquee-slow text-base md:text-lg font-medium tracking-wide">
+          Authentic Greek Menu • Fresh Daily • Gyros • Souvlaki • Platters • Vegetarian Options • Halal Certified
+          &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+          Authentic Greek Menu • Fresh Daily • Gyros • Souvlaki • Platters • Vegetarian Options • Halal Certified
+          &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+          Authentic Greek Menu • Fresh Daily • Gyros • Souvlaki • Platters • Vegetarian Options • Halal Certified
+        </div>
+      </div>
+      
       <SharedNav />
 
       {/* Hero Section */}
       <AnimatedSection className="bg-white py-16 border-b">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold font-playfair text-black mb-4">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-playfair text-black leading-tight mb-4">
             Our Menu
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
@@ -72,7 +83,7 @@ export default function MenuPage() {
         {menuCategories.map((category, index) => (
           <AnimatedSection key={index} delay={index * 0.1} className="mb-20">
             <div className="mb-12">
-              <h2 className="text-4xl font-bold font-playfair text-black mb-3 italic">
+              <h2 className="text-4xl md:text-5xl font-bold font-playfair text-black mb-6 italic">
                 {category.name}
               </h2>
               <p className="text-lg text-gray-700">{category.description}</p>
@@ -105,7 +116,7 @@ export default function MenuPage() {
       {/* Dietary Information */}
       <AnimatedSection className="bg-white py-16 border-t">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold font-playfair text-black text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black text-center mb-8">
             Dietary Options Available
           </h2>
           <div className="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
@@ -127,7 +138,7 @@ export default function MenuPage() {
       {/* CTA Section */}
       <AnimatedSection className="py-20 bg-[#0066FF]">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-playfair mb-6 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold font-playfair mb-6 text-white italic">
             Ready to Order?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto text-white">
