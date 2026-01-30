@@ -1,170 +1,181 @@
-import Image from 'next/image'
-import Link from 'next/link'
+'use client'
 
-export const metadata = {
-  title: 'Office Catering Toronto | Greek Food Delivery | Gyro City',
-  description: 'Office catering in Toronto with authentic Greek food. Perfect for team lunches, meetings, and corporate events. Free delivery on orders $200+.',
-}
+import { SharedNav } from '@/components/shared-nav'
+import { SharedFooter } from '@/components/shared-footer'
+import { AnimatedSection } from '@/components/ui/animated-section'
+import { GyroButton } from '@/components/ui/gyro-button'
+import { GyroCard } from '@/components/ui/gyro-card'
 
 export default function OfficeCateringPage() {
   return (
-    <main className="min-h-screen bg-white">
-      <nav className="sticky top-0 z-50 bg-[#1E3A8A] text-white shadow-lg">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <Image src="/gyro-city-logo.png" alt="Gyro City" width={50} height={50} className="rounded-full" />
-            <span className="text-2xl font-bold">GYRO CITY</span>
-          </Link>
-          <div className="hidden md:flex gap-6">
-            <Link href="/menu" className="hover:text-[#B8860B] transition">Menu</Link>
-            <Link href="/catering" className="text-[#B8860B] font-semibold">Catering</Link>
-            <Link href="/about" className="hover:text-[#B8860B] transition">About</Link>
-            <Link href="/contact" className="hover:text-[#B8860B] transition">Contact</Link>
-          </div>
-          <Link href="/quote" className="bg-[#B8860B] text-white px-6 py-2 rounded-lg hover:bg-[#9A7209] transition font-semibold">
-            Get Quote
-          </Link>
-        </div>
-      </nav>
+    <main className="min-h-screen bg-gray-50">
+      <SharedNav />
 
-      <section className="bg-gradient-to-r from-[#1E3A8A] to-[#2563EB] text-white py-20">
+      {/* Hero Section */}
+      <AnimatedSection className="bg-gradient-to-br from-gyro-navy via-blue-900 to-gyro-navy text-white py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6">Office Catering Toronto</h1>
-          <p className="text-xl max-w-2xl mx-auto">
-            Authentic Greek food delivered fresh to your downtown Toronto office. Perfect for team lunches, meetings, and workplace events.
+          <h1 className="text-5xl md:text-6xl font-bold font-playfair mb-6">
+            Office Catering
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
+            Delicious Greek food delivered fresh to your downtown Toronto office
           </p>
         </div>
-      </section>
+      </AnimatedSection>
 
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto space-y-8 text-lg text-gray-700">
-            <p>
-              Looking for <strong className="text-[#1E3A8A]">office catering in Toronto</strong>? Gyro City specializes in delivering fresh, delicious Greek food to offices throughout downtown Toronto and the GTA. Whether you're feeding 10 team members or 100+ employees, our authentic Mediterranean catering brings energy and flavor to your workplace.
-            </p>
-
-            <div className="bg-gray-50 p-8 rounded-lg">
-              <h2 className="text-3xl font-bold text-[#1E3A8A] mb-6">Why Choose Gyro City for Office Catering?</h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                {[
-                  { icon: '🕐', title: 'On-Time Delivery', desc: 'Reliable delivery windows that respect your schedule' },
-                  { icon: '💼', title: 'Corporate Packages', desc: 'Flexible options for teams of all sizes' },
-                  { icon: '🌱', title: 'Dietary Options', desc: 'Halal, vegetarian, vegan, gluten-free available' },
-                  { icon: '📦', title: 'Easy Setup', desc: 'Individually boxed or buffet-style service' },
-                  { icon: '💰', title: 'Free Delivery', desc: 'No delivery fee on orders over $200' },
-                  { icon: '👍', title: 'Fresh Daily', desc: 'Never frozen - made fresh every morning' }
-                ].map((feature, i) => (
-                  <div key={i} className="flex gap-3">
-                    <div className="text-3xl">{feature.icon}</div>
-                    <div>
-                      <h3 className="font-bold text-[#1E3A8A]">{feature.title}</h3>
-                      <p className="text-sm text-gray-700">{feature.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <h2 className="text-3xl font-bold text-[#1E3A8A] mt-12">Popular Office Catering Options</h2>
-            
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-bold text-[#1E3A8A] mb-3">Individual Lunch Boxes</h3>
-                <p className="text-2xl font-bold text-[#B8860B] mb-3">$15.99+</p>
-                <p className="text-gray-700 mb-4">Perfect for team meetings and desk lunches. Each box includes main, salad, sides, and pita.</p>
-                <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Classic Gyro Box</li>
-                  <li>• Chicken Souvlaki Box</li>
-                  <li>• Vegetarian Falafel Box</li>
-                  <li>• Mixed Grill Box</li>
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          {/* Left - Details */}
+          <AnimatedSection>
+            <div className="bg-white rounded-2xl p-8 shadow-xl">
+              <h2 className="text-3xl font-bold font-playfair text-gyro-navy mb-6">
+                Why Choose Us for Your Office?
+              </h2>
+              <div className="space-y-4 text-lg text-gray-700">
+                <p>
+                  Treat your team to authentic Greek flavors with our office catering services. We provide a variety of options tailored to fit your event size and preferences.
+                </p>
+                <p>
+                  From individual gyro boxes to elaborate buffet setups, our catering is designed to make your office lunches and corporate events deliciously unique.
+                </p>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Halal, vegetarian, and vegan options available</li>
+                  <li>Flexible packages for teams of all sizes</li>
+                  <li>Dedicated service for timely delivery</li>
                 </ul>
               </div>
+            </div>
+          </AnimatedSection>
 
-              <div className="bg-white p-6 rounded-lg shadow-lg border-2 border-[#B8860B]">
-                <div className="bg-[#B8860B] text-white px-3 py-1 rounded-full text-xs font-semibold inline-block mb-3">
-                  MOST POPULAR
+          {/* Right - Image Placeholder */}
+          <AnimatedSection delay={0.2}>
+            <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-gyro-gold/30 to-transparent"></div>
+              <div className="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold backdrop-blur-sm bg-gyro-navy/40">
+                [Office Event Image]
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+
+        {/* Packages Section */}
+        <AnimatedSection className="mt-16">
+          <h2 className="text-3xl font-bold font-playfair text-gyro-navy text-center mb-8">
+            Popular Office Packages
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {[
+              {
+                name: "Morning Meeting Package",
+                price: "$199",
+                features: [
+                  "Bagels, pastries, and spreads",
+                  "Fresh fruit platter",
+                  "Coffee and tea service",
+                  "Ideal for 10-15 people"
+                ],
+                link: "/quote"
+              },
+              {
+                name: "Greek Lunch Box",
+                price: "$15.99/person",
+                features: [
+                  "Choice of Gyro or Souvlaki",
+                  "Greek salad and pita",
+                  "Individually packaged",
+                  "Perfect for office lunches"
+                ],
+                link: "/order"
+              },
+              {
+                name: "Deluxe Corporate Buffet",
+                price: "$25.99/person",
+                features: [
+                  "Full buffet setup",
+                  "Selection of gyros, souvlaki, salads",
+                  "Desserts and drinks included",
+                  "Minimum 20 people"
+                ],
+                link: "/quote"
+              }
+            ].map((pkg, i) => (
+              <GyroCard key={i} className="">
+                <h3 className="text-2xl font-bold font-playfair text-gyro-navy mb-3">
+                  {pkg.name}
+                </h3>
+                <div className="mb-4">
+                  <span className="text-3xl font-bold text-gyro-gold">{pkg.price}</span>
                 </div>
-                <h3 className="text-xl font-bold text-[#1E3A8A] mb-3">Build-Your-Own Gyro Bar</h3>
-                <p className="text-2xl font-bold text-[#B8860B] mb-3">$18.99/person</p>
-                <p className="text-gray-700 mb-4">Interactive buffet setup. Min 15 people. Includes all proteins, toppings, sides, and sauces.</p>
-                <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Choose 2-3 proteins</li>
-                  <li>• Fresh toppings bar</li>
-                  <li>• Greek salad & rice</li>
-                  <li>• Pita & tzatziki</li>
+                <ul className="space-y-3 mb-6">
+                  {pkg.features.map((feature, j) => (
+                    <li key={j} className="flex items-start gap-2 text-gray-700">
+                      <span className="text-gyro-gold mt-1">✓</span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
                 </ul>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-bold text-[#1E3A8A] mb-3">Corporate Lunch Package</h3>
-                <p className="text-2xl font-bold text-[#B8860B] mb-3">$19.99/person</p>
-                <p className="text-gray-700 mb-4">Full-service catering for larger teams. Min 20 people. Perfect for all-hands meetings.</p>
-                <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• 2 protein options</li>
-                  <li>• Greek salad & sides</li>
-                  <li>• Pita bread & sauces</li>
-                  <li>• Cookies included</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-[#1E3A8A] text-white p-8 rounded-lg mt-12">
-              <h2 className="text-3xl font-bold mb-4">Ideal For:</h2>
-              <div className="grid md:grid-cols-2 gap-4">
-                <ul className="space-y-2">
-                  <li>✓ Team lunches & weekly catering</li>
-                  <li>✓ Client meetings & presentations</li>
-                  <li>✓ Training sessions & workshops</li>
-                  <li>✓ Employee appreciation events</li>
-                </ul>
-                <ul className="space-y-2">
-                  <li>✓ Board meetings & conferences</li>
-                  <li>✓ Working lunches & brainstorms</li>
-                  <li>✓ Office parties & celebrations</li>
-                  <li>✓ Recurring weekly orders</li>
-                </ul>
-              </div>
-            </div>
-
-            <h2 className="text-3xl font-bold text-[#1E3A8A] mt-12">Delivery Areas</h2>
-            <p>We deliver fresh Greek catering throughout:</p>
-            <ul className="grid md:grid-cols-3 gap-2">
-              <li>✓ Downtown Toronto</li>
-              <li>✓ Financial District</li>
-              <li>✓ King West</li>
-              <li>✓ Liberty Village</li>
-              <li>✓ Yorkville</li>
-              <li>✓ Harbourfront</li>
-              <li>✓ North York</li>
-              <li>✓ Etobicoke</li>
-              <li>✓ Scarborough</li>
-            </ul>
+                <GyroButton href={pkg.link} variant="secondary" className="w-full">
+                  Learn More →
+                </GyroButton>
+              </GyroCard>
+            ))}
           </div>
-        </div>
-      </section>
+        </AnimatedSection>
 
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-[#1E3A8A] mb-6">Ready to Feed Your Team?</h2>
-          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Get a free quote for your next office catering order. We respond within 24 hours.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/quote" className="bg-[#B8860B] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#9A7209] transition">
-              Get Free Quote
-            </Link>
-            <a href="tel:6475488740" className="bg-[#1E3A8A] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#2563EB] transition">
-              Call (647) 548-8740
-            </a>
+        {/* Testimonials Section */}
+        <AnimatedSection className="mt-16">
+          <h2 className="text-3xl font-bold font-playfair text-gyro-navy text-center mb-8">
+            What Our Clients Say
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {[
+              {
+                text: "Gyro City catered our office lunch, and it was amazing! Everyone loved the variety and quality. Highly recommend!",
+                name: "Alex P.",
+                company: "TechCorp Inc."
+              },
+              {
+                text: "Perfect catering solution for our meeting. The individual boxes were convenient and delicious.",
+                name: "Sarah K.",
+                company: "Marketing Titans"
+              },
+              {
+                text: "Professional and reliable. Our clients were impressed with the food and service.",
+                name: "John M.",
+                company: "Finance Solutions Group"
+              }
+            ].map((testimonial, i) => (
+              <GyroCard key={i} className="">
+                <p className="text-gray-700 mb-4 italic">"{testimonial.text}"</p>
+                <p className="font-bold text-gyro-navy">{testimonial.name}</p>
+                <p className="text-sm text-gray-600">{testimonial.company}</p>
+              </GyroCard>
+            ))}
           </div>
-        </div>
-      </section>
+        </AnimatedSection>
 
-      <footer className="bg-[#1E3A8A] text-white py-12">
-        <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2026 Gyro City. All rights reserved.</p>
-        </div>
-      </footer>
+        {/* CTA Section */}
+        <AnimatedSection className="py-20 bg-gradient-to-r from-gyro-gold to-gyro-gold-hover text-white">
+          <div className="container mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold font-playfair mb-6">
+              Ready to Elevate Your Office Lunch?
+            </h2>
+            <p className="text-xl mb-8 max-w-2xl mx-auto">
+              Request a free quote today and discover our catering excellence
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <GyroButton href="/quote" variant="secondary" className="bg-white text-gyro-navy hover:bg-gray-100 border-0">
+                Get Free Quote →
+              </GyroButton>
+              <GyroButton href="/order" variant="ghost" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-gyro-gold">
+                Order Online
+              </GyroButton>
+            </div>
+          </div>
+        </AnimatedSection>
+      </div>
+
+      <SharedFooter />
     </main>
   )
 }
