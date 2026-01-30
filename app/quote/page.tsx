@@ -612,37 +612,25 @@ export default function QuotePage() {
             <div className="bg-white border-4 border-[#0066FF] rounded-2xl p-8 text-center">
               <div className="text-5xl mb-4">⚡</div>
               <h3 className="text-2xl font-bold mb-3">Fast Response</h3>
-              <p className="text-lg font-semibold text-[#0066FF] mb-3">Within 24 hours, often same day</p>
-              <p className="text-gray-700">
-                We respect your time. Most quotes are sent within 4-8 business hours. Urgent event? Call us directly for immediate assistance.
-              </p>
+              <p className="text-lg font-semibold text-[#0066FF]">Within 24 hours, often same day</p>
             </div>
 
             <div className="bg-white border-4 border-[#0066FF] rounded-2xl p-8 text-center">
               <div className="text-5xl mb-4">💰</div>
               <h3 className="text-2xl font-bold mb-3">Transparent Pricing</h3>
-              <p className="text-lg font-semibold text-[#0066FF] mb-3">No hidden fees, all-inclusive quotes</p>
-              <p className="text-gray-700">
-                Our quotes include everything: food, serving supplies, setup, and service. What you see is what you pay. No surprises.
-              </p>
+              <p className="text-lg font-semibold text-[#0066FF]">No hidden fees, all-inclusive quotes</p>
             </div>
 
             <div className="bg-white border-4 border-[#0066FF] rounded-2xl p-8 text-center">
               <div className="text-5xl mb-4">🎨</div>
               <h3 className="text-2xl font-bold mb-3">Fully Customizable</h3>
-              <p className="text-lg font-semibold text-[#0066FF] mb-3">Tailored to your event & budget</p>
-              <p className="text-gray-700">
-                Every event is unique. We customize menus to match your preferences, dietary needs, and budget. Not locked into packages.
-              </p>
+              <p className="text-lg font-semibold text-[#0066FF]">Tailored to your event & budget</p>
             </div>
 
             <div className="bg-white border-4 border-[#0066FF] rounded-2xl p-8 text-center">
               <div className="text-5xl mb-4">🤝</div>
               <h3 className="text-2xl font-bold mb-3">No Obligation</h3>
-              <p className="text-lg font-semibold text-[#0066FF] mb-3">Free quotes with zero pressure</p>
-              <p className="text-gray-700">
-                Get your quote, take your time deciding. No pushy sales tactics. We're here when you're ready.
-              </p>
+              <p className="text-lg font-semibold text-[#0066FF]">Free quotes with zero pressure</p>
             </div>
           </div>
         </div>
