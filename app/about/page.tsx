@@ -9,7 +9,7 @@ export default function AboutPage() {
     <main className="min-h-screen bg-white">
       {/* Moving Text Marquee */}
       <div className="bg-white text-black py-3 overflow-hidden border-b border-gray-200">
-        <div className="whitespace-nowrap animate-marquee-slow text-lg font-medium">
+        <div className="whitespace-nowrap animate-marquee-slow text-base md:text-lg font-medium tracking-wide">
           Family-Owned Since 2014 • 10,000+ Events Served • Authentic Greek Recipes • Toronto's Trusted Catering
           &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
           Family-Owned Since 2014 • 10,000+ Events Served • Authentic Greek Recipes • Toronto's Trusted Catering
@@ -62,7 +62,7 @@ export default function AboutPage() {
       <AnimatedSection className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-8 text-center">
+            <h2 className="text-4xl md:text-5xl font-bold font-playfair text-black mb-8 text-center italic">
               Our Story: From Family Recipes to Toronto's Favorite Greek Catering
             </h2>
             
@@ -86,7 +86,7 @@ export default function AboutPage() {
       {/* Mission & Values Section */}
       <AnimatedSection className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-16 text-center uppercase">
+          <h2 className="text-4xl md:text-5xl font-bold font-playfair text-black mb-16 text-center italic">
             What Drives Us Every Day
           </h2>
 
@@ -100,7 +100,7 @@ export default function AboutPage() {
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
               <div className="text-5xl mb-4">🍴</div>
-              <h3 className="text-2xl font-bold text-black mb-3">Authentic Greek Cuisine</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Authentic Greek Cuisine</h3>
               <p className="text-sm font-semibold text-[#0066FF] mb-4">Real recipes, real ingredients</p>
               <p className="text-gray-700">
                 No shortcuts. No frozen food. We prepare everything fresh daily using traditional Greek recipes passed down through generations. Our tzatziki is made from scratch. Our meats are marinated for 24 hours. Our spanakopita is hand-rolled. That's the Greek way.
@@ -116,7 +116,7 @@ export default function AboutPage() {
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
               <div className="text-5xl mb-4">❤️</div>
-              <h3 className="text-2xl font-bold text-black mb-3">Family Values</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Family Values</h3>
               <p className="text-sm font-semibold text-[#0066FF] mb-4">Run like family, served with heart</p>
               <p className="text-gray-700">
                 We're a family-owned business, and we treat every customer like family. That means honest pricing, reliable service, and food we're proud to serve. No corporate nonsense - just real people who care about your event.
@@ -132,7 +132,7 @@ export default function AboutPage() {
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
               <div className="text-5xl mb-4">🎯</div>
-              <h3 className="text-2xl font-bold text-black mb-3">Excellence in Service</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Excellence in Service</h3>
               <p className="text-sm font-semibold text-[#0066FF] mb-4">Your event, our reputation</p>
               <p className="text-gray-700">
                 When you trust us with your catering, we take it seriously. We show up on time (always), deliver exactly what we promised (no surprises), and handle every detail professionally. Your success is our success.
@@ -148,7 +148,7 @@ export default function AboutPage() {
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
               <div className="text-5xl mb-4">🌱</div>
-              <h3 className="text-2xl font-bold text-black mb-3">Community Focused</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Community Focused</h3>
               <p className="text-sm font-semibold text-[#0066FF] mb-4">Proud to serve Toronto</p>
               <p className="text-gray-700">
                 We're not just based in Toronto - we're part of Toronto. We support local suppliers, hire locally, and give back to the community that's supported us. When you choose Gyro City, you're supporting a local family business.
@@ -164,7 +164,7 @@ export default function AboutPage() {
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
               <div className="text-5xl mb-4">🤝</div>
-              <h3 className="text-2xl font-bold text-black mb-3">Integrity First</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Integrity First</h3>
               <p className="text-sm font-semibold text-[#0066FF] mb-4">Honest, transparent, trustworthy</p>
               <p className="text-gray-700">
                 What we quote is what you pay. What we promise is what we deliver. No hidden fees, no bait-and-switch, no games. We do business the old-fashioned way - with integrity.
@@ -177,7 +177,7 @@ export default function AboutPage() {
       {/* Why Toronto Chooses Gyro City */}
       <AnimatedSection className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-16 text-center uppercase">
+          <h2 className="text-4xl md:text-5xl font-bold font-playfair text-black mb-16 text-center italic">
             Why Toronto Chooses Gyro City
           </h2>
 
@@ -191,7 +191,7 @@ export default function AboutPage() {
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
               <div className="text-5xl mb-4">📅</div>
-              <h3 className="text-2xl font-bold text-black mb-3">10+ Years Experience</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">10+ Years Experience</h3>
               <p className="text-sm font-semibold text-[#0066FF] mb-4">Since 2014 | 10,000+ Events Served</p>
               <p className="text-gray-700 mb-4">
                 We've catered everything from 10-person office lunches to 500-person weddings. Small family funerals to corporate galas. We've seen it all and learned how to do it right.
@@ -213,7 +213,7 @@ export default function AboutPage() {
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
               <div className="text-5xl mb-4">👨‍🍳</div>
-              <h3 className="text-2xl font-bold text-black mb-3">Traditional Greek Recipes</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Traditional Greek Recipes</h3>
               <p className="text-sm font-semibold text-[#0066FF] mb-4">Passed down through generations</p>
               <p className="text-gray-700 mb-4">
                 Our recipes come from Greece - specifically from Thessaloniki and the islands. These aren't "inspired by" Greek recipes. These ARE Greek recipes, prepared the way Greeks have made them for centuries.
@@ -235,7 +235,7 @@ export default function AboutPage() {
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
               <div className="text-5xl mb-4">🥙</div>
-              <h3 className="text-2xl font-bold text-black mb-3">Fresh Daily Preparation</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Fresh Daily Preparation</h3>
               <p className="text-sm font-semibold text-[#0066FF] mb-4">Never frozen, always fresh</p>
               <p className="text-gray-700 mb-4">
                 We prepare food fresh every morning for that day's events. No reheating week-old food. No frozen proteins. Everything is made fresh, delivered fresh, served fresh.
@@ -257,7 +257,7 @@ export default function AboutPage() {
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
               <div className="text-5xl mb-4">🌍</div>
-              <h3 className="text-2xl font-bold text-black mb-3">Serving All of Toronto & GTA</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Serving All of Toronto & GTA</h3>
               <p className="text-sm font-semibold text-[#0066FF] mb-4">We come to you</p>
               <p className="text-gray-700 mb-4">
                 Downtown Toronto, North York, Scarborough, Etobicoke, Mississauga, Brampton, Vaughan, Markham - we serve the entire Greater Toronto Area.
@@ -279,7 +279,7 @@ export default function AboutPage() {
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
               <div className="text-5xl mb-4">💼</div>
-              <h3 className="text-2xl font-bold text-black mb-3">Trusted by Toronto Businesses</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Trusted by Toronto Businesses</h3>
               <p className="text-sm font-semibold text-[#0066FF] mb-4">200+ corporate clients</p>
               <p className="text-gray-700 mb-4">
                 Law firms, banks, tech companies, hospitals, universities - Toronto's businesses trust us for reliable, professional catering.
@@ -301,7 +301,7 @@ export default function AboutPage() {
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
               <div className="text-5xl mb-4">🎉</div>
-              <h3 className="text-2xl font-bold text-black mb-3">Perfect for Every Occasion</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Perfect for Every Occasion</h3>
               <p className="text-sm font-semibold text-[#0066FF] mb-4">One kitchen, every event type</p>
               <p className="text-gray-700 mb-4">
                 Same quality whether it's a Tuesday office lunch or a Saturday wedding. We bring the same care and professionalism to every single event.
@@ -320,7 +320,7 @@ export default function AboutPage() {
       {/* Our Food Philosophy */}
       <AnimatedSection className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-16 text-center uppercase">
+          <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-16 text-center">
             How We Approach Food
           </h2>
 
@@ -332,7 +332,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5 }}
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
-              <h3 className="text-2xl font-bold text-black mb-4">Quality Over Quantity</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Quality Over Quantity</h3>
               <p className="text-gray-700">
                 We'd rather serve 50 people excellent food than 500 people mediocre food. Every dish meets our standards or it doesn't leave our kitchen.
               </p>
@@ -345,7 +345,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5 }}
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
-              <h3 className="text-2xl font-bold text-black mb-4">Ingredients Matter</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Ingredients Matter</h3>
               <p className="text-gray-700">
                 We source premium ingredients - imported Greek olive oil, authentic feta, fresh vegetables, quality meats. You taste the difference.
               </p>
@@ -358,7 +358,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
-              <h3 className="text-2xl font-bold text-black mb-4">Respect for Tradition</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Respect for Tradition</h3>
               <p className="text-gray-700">
                 Greek cuisine has survived thousands of years because it works. We respect traditional recipes while making smart adaptations for modern dietary needs.
               </p>
@@ -371,7 +371,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
-              <h3 className="text-2xl font-bold text-black mb-4">Made with Love</h3>
+              <h3 className="text-2xl md:text-3xl font-playfair font-bold text-black mb-4">Made with Love</h3>
               <p className="text-gray-700">
                 Sounds cliché, but it's true. Our team cares about the food we serve. We cook like we're feeding our own families.
               </p>
@@ -383,7 +383,7 @@ export default function AboutPage() {
       {/* Meet the Team */}
       <AnimatedSection className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-8 text-center uppercase">
+          <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-8 text-center">
             The People Behind Your Catering
           </h2>
 
@@ -396,7 +396,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5 }}
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
-              <h3 className="text-3xl font-bold text-black mb-4">The Owners</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">The Owners</h3>
               <p className="text-lg italic text-gray-700 mb-4">
                 "We started Gyro City because Toronto deserved authentic Greek food made the right way. Ten years later, we're proud to serve thousands of Toronto families and businesses every year."
               </p>
@@ -413,7 +413,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
-              <h3 className="text-3xl font-bold text-black mb-4">Our Kitchen Team</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Our Kitchen Team</h3>
               <p className="text-lg font-semibold text-[#0066FF] mb-3">Experienced chefs with Greek culinary backgrounds</p>
               <p className="text-gray-700">
                 Our kitchen is led by chefs trained in traditional Greek cooking. Some grew up in Greece, others learned from Greek families here in Canada. All share a passion for authentic Mediterranean cuisine.
@@ -428,7 +428,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
-              <h3 className="text-3xl font-bold text-black mb-4">Our Service Team</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Our Service Team</h3>
               <p className="text-lg font-semibold text-[#0066FF] mb-3">Professional, reliable, courteous</p>
               <p className="text-gray-700">
                 The team that delivers and sets up your catering represents us. We hire people who are professional, punctual, and genuinely care about customer service.
@@ -441,7 +441,7 @@ export default function AboutPage() {
       {/* Our Commitment */}
       <AnimatedSection className="py-20 bg-[#0066FF] text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center uppercase">
+          <h2 className="text-4xl md:text-5xl font-bold font-playfair mb-16 text-center italic">
             Our Promise to You
           </h2>
 
@@ -475,7 +475,7 @@ export default function AboutPage() {
       {/* By the Numbers */}
       <AnimatedSection className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-16 text-center uppercase">
+          <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-16 text-center">
             Gyro City in Numbers
           </h2>
 
@@ -511,7 +511,7 @@ export default function AboutPage() {
       {/* Community Involvement */}
       <AnimatedSection className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-8 text-center uppercase">
+          <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-8 text-center">
             Giving Back to Toronto
           </h2>
           
@@ -547,7 +547,7 @@ export default function AboutPage() {
       {/* Testimonials */}
       <AnimatedSection className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-16 text-center uppercase">
+          <h2 className="text-4xl md:text-5xl font-bold font-playfair text-black mb-16 text-center italic">
             What Toronto Says About Us
           </h2>
 
@@ -561,7 +561,7 @@ export default function AboutPage() {
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8 text-center"
             >
               <div className="text-[#0066FF] text-2xl mb-4">⭐⭐⭐⭐⭐</div>
-              <h3 className="text-xl font-bold text-black mb-3">"The best Greek food in Toronto"</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">"The best Greek food in Toronto"</h3>
               <p className="text-gray-700 mb-4 italic">
                 "We've ordered from Gyro City over 50 times for our office. The food is consistently excellent - authentic, fresh, and delicious. They've never let us down."
               </p>
@@ -578,7 +578,7 @@ export default function AboutPage() {
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8 text-center"
             >
               <div className="text-[#0066FF] text-2xl mb-4">⭐⭐⭐⭐⭐</div>
-              <h3 className="text-xl font-bold text-black mb-3">"Made our wedding perfect"</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">"Made our wedding perfect"</h3>
               <p className="text-gray-700 mb-4 italic">
                 "Gyro City catered our 150-person wedding. The food was incredible, service was flawless, and so many guests asked who catered. Highly recommend!"
               </p>
@@ -595,7 +595,7 @@ export default function AboutPage() {
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8 text-center"
             >
               <div className="text-[#0066FF] text-2xl mb-4">⭐⭐⭐⭐⭐</div>
-              <h3 className="text-xl font-bold text-black mb-3">"Compassionate during difficult time"</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">"Compassionate during difficult time"</h3>
               <p className="text-gray-700 mb-4 italic">
                 "After my father's funeral, Gyro City handled the reception for 70 people. They were professional, respectful, and the food brought comfort to our family. Thank you."
               </p>
@@ -609,7 +609,7 @@ export default function AboutPage() {
       {/* Contact Section */}
       <AnimatedSection className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-8 text-center uppercase">
+          <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-8 text-center">
             Get in Touch
           </h2>
           
@@ -662,7 +662,7 @@ export default function AboutPage() {
       {/* Why Greek Food (Educational) */}
       <AnimatedSection className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-16 text-center uppercase">
+          <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-16 text-center">
             Why Greek Cuisine?
           </h2>
 
@@ -675,7 +675,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5 }}
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
-              <h3 className="text-2xl font-bold text-black mb-4">Healthy & Delicious</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Healthy & Delicious</h3>
               <p className="text-gray-700">
                 Greek food is Mediterranean diet at its finest - olive oil, fresh vegetables, lean proteins, whole grains. It's healthy food that actually tastes amazing.
               </p>
@@ -689,7 +689,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5 }}
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
-              <h3 className="text-2xl font-bold text-black mb-4">Something for Everyone</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Something for Everyone</h3>
               <p className="text-gray-700">
                 Meat lovers, vegetarians, vegans, gluten-free - Greek cuisine naturally accommodates most dietary needs. Spanakopita, falafel, grilled fish, lamb - there's variety.
               </p>
@@ -703,7 +703,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
-              <h3 className="text-2xl font-bold text-black mb-4">Proven Track Record</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Proven Track Record</h3>
               <p className="text-gray-700">
                 Greek food has been perfected over thousands of years. These recipes work for celebrations, funerals, daily meals - all occasions.
               </p>
@@ -717,7 +717,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="bg-white border-4 border-[#0066FF] rounded-xl p-8"
             >
-              <h3 className="text-2xl font-bold text-black mb-4">Brings People Together</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair text-black mb-4">Brings People Together</h3>
               <p className="text-gray-700">
                 Greek culture centers around sharing food. That communal, warm spirit is exactly what events need - whether it's a corporate lunch or wedding feast.
               </p>
