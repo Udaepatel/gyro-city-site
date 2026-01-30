@@ -596,7 +596,7 @@ export default function OfficeCateringPage() {
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Place Your Order</h3>
-                <p className="text-gray-700">Order online in minutes or call (416) XXX-XXXX. Specify dietary needs and delivery details.</p>
+                <p className="text-gray-700">Order online in minutes or call +1 (647) 340-8001. Specify dietary needs and delivery details.</p>
               </div>
             </div>
 
@@ -921,8 +921,8 @@ export default function OfficeCateringPage() {
             <Link href="/quote" className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#0066FF] transition-all">
               GET FREE QUOTE
             </Link>
-            <Link href="tel:416-XXX-XXXX" className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#0066FF] transition-all">
-              CALL (416) XXX-XXXX
+            <Link href="tel:+16473408001" className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#0066FF] transition-all">
+              CALL +1 (647) 340-8001
             </Link>
           </div>
         </div>
@@ -987,8 +987,8 @@ export default function OfficeCateringPage() {
             <div>
               <h4 className="font-bold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>Toronto, ON</li>
-                <li>Phone: (416) XXX-XXXX</li>
+                <li>898 College St, Toronto ON M6H1A4</li>
+                <li>Phone: +1 (647) 340-8001</li>
                 <li>Email: info@gyrocity.ca</li>
               </ul>
             </div>

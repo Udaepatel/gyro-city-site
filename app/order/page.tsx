@@ -73,7 +73,7 @@ export default function OrderPage() {
           <div className="grid md:grid-cols-4 gap-8">
             {[
               { step: "1", icon: "📋", title: "Choose Your Items", desc: "Browse our menu and select what you'd like" },
-              { step: "2", icon: "📞", title: "Contact Us", desc: "Call (647) 548-8740 or request a quote online" },
+              { step: "2", icon: "📞", title: "Contact Us", desc: "Call +1 (647) 340-8001 or request a quote online" },
               { step: "3", icon: "✅", title: "Confirm Details", desc: "We'll finalize your order and send an invoice" },
               { step: "4", icon: "🚚", title: "We Deliver", desc: "Fresh food delivered to your location on time" },
             ].map((item, i) => (
@@ -164,8 +164,8 @@ export default function OrderPage() {
               Place your order now by phone or request a custom catering quote online
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <GyroButton href="tel:6475488740" variant="secondary" className="bg-white text-gyro-navy hover:bg-gray-100 border-0">
-                📞 Call (647) 548-8740
+              <GyroButton href="tel:+16473408001" variant="secondary" className="bg-white text-gyro-navy hover:bg-gray-100 border-0">
+                📞 Call +1 (647) 340-8001
               </GyroButton>
               <GyroButton href="/quote" variant="ghost" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-gyro-gold">
                 Request Quote Online →

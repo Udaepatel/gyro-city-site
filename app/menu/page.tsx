@@ -137,8 +137,8 @@ export default function MenuPage() {
             <GyroButton href="/order" variant="secondary" className="bg-white text-[#0066FF] hover:bg-gray-100 border-0">
               Order Online →
             </GyroButton>
-            <GyroButton href="tel:6475488740" variant="ghost" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0066FF]">
-              Call (647) 548-8740
+            <GyroButton href="tel:+16473408001" variant="ghost" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0066FF]">
+              Call +1 (647) 340-8001
             </GyroButton>
           </div>
         </div>

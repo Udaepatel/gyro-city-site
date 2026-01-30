@@ -375,7 +375,7 @@ export default function Home() {
                 Do you offer same-day catering?
               </h3>
               <p className="text-lg text-gray-700">
-                Yes! Call (647) 548-8740 before 11 AM for same-day delivery in downtown Toronto. For other areas, we recommend ordering 24-48 hours in advance to ensure availability.
+                Yes! Call +1 (647) 340-8001 before 11 AM for same-day delivery in downtown Toronto. For other areas, we recommend ordering 24-48 hours in advance to ensure availability.
               </p>
             </div>
 
@@ -431,8 +431,8 @@ export default function Home() {
             <Link href="/quote" className="bg-white text-[#0066FF] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
               Get Free Quote →
             </Link>
-            <Link href="tel:6475488740" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#0066FF] transition">
-              Call (647) 548-8740
+            <Link href="tel:+16473408001" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#0066FF] transition">
+              Call +1 (647) 340-8001
             </Link>
           </div>
         </div>
@@ -473,8 +473,8 @@ export default function Home() {
             <div>
               <h4 className="font-bold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>Toronto, ON</li>
-                <li>Phone: <a href="tel:6475488740" className="hover:text-white transition">(647) 548-8740</a></li>
+                <li>898 College St, Toronto ON M6H1A4</li>
+                <li>Phone: <a href="tel:+16473408001" className="hover:text-white transition">+1 (647) 340-8001</a></li>
                 <li>Email: <a href="mailto:info@gyrocity.ca" className="hover:text-white transition">info@gyrocity.ca</a></li>
               </ul>
             </div>

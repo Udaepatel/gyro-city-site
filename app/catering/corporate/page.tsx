@@ -565,8 +565,8 @@ export default function CorporateCateringPage() {
             <div>
               <h4 className="font-bold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>Toronto, ON</li>
-                <li>Phone: (416) XXX-XXXX</li>
+                <li>898 College St, Toronto ON M6H1A4</li>
+                <li>Phone: +1 (647) 340-8001</li>
                 <li>Email: info@gyrocity.ca</li>
               </ul>
             </div>

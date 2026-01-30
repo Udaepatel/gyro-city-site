@@ -37,8 +37,8 @@ export function SharedFooter() {
           <div>
             <h4 className="font-bold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Toronto, ON</li>
-              <li>Phone: <a href="tel:6475488740" className="hover:text-white transition">(647) 548-8740</a></li>
+              <li>898 College St, Toronto ON M6H1A4</li>
+              <li>Phone: <a href="tel:+16473408001" className="hover:text-white transition">+1 (647) 340-8001</a></li>
               <li>Email: <a href="mailto:info@gyrocity.ca" className="hover:text-white transition">info@gyrocity.ca</a></li>
             </ul>
           </div>

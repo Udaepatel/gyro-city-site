@@ -624,7 +624,7 @@ export default function AboutPage() {
                 <div className="space-y-3 text-gray-700">
                   <p className="flex items-center gap-3">
                     <span className="text-2xl">📞</span>
-                    <span><strong>Phone:</strong> <a href="tel:6475488740" className="text-[#0066FF] hover:underline">(647) 548-8740</a></span>
+                    <span><strong>Phone:</strong> <a href="tel:+16473408001" className="text-[#0066FF] hover:underline">+1 (647) 340-8001</a></span>
                   </p>
                   <p className="flex items-center gap-3">
                     <span className="text-2xl">📧</span>
@@ -632,7 +632,7 @@ export default function AboutPage() {
                   </p>
                   <p className="flex items-center gap-3">
                     <span className="text-2xl">📍</span>
-                    <span><strong>Location:</strong> Toronto, ON</span>
+                    <span><strong>Location:</strong> 898 College St, Toronto ON M6H1A4</span>
                   </p>
                 </div>
               </div>
@@ -742,7 +742,7 @@ export default function AboutPage() {
             <Link href="/menu" className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#0066FF] transition-all">
               VIEW MENU
             </Link>
-            <Link href="tel:6475488740" className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#0066FF] transition-all">
+            <Link href="tel:+16473408001" className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#0066FF] transition-all">
               CALL US
             </Link>
           </div>
@@ -774,9 +774,9 @@ export default function AboutPage() {
             <div>
               <h3 className="font-bold text-xl mb-4 font-playfair">Contact</h3>
               <ul className="space-y-2">
-                <li>Phone: <a href="tel:6475488740" className="hover:text-[#0066FF] transition">(647) 548-8740</a></li>
+                <li>Phone: <a href="tel:+16473408001" className="hover:text-[#0066FF] transition">+1 (647) 340-8001</a></li>
                 <li>Email: <a href="mailto:info@gyrocity.ca" className="hover:text-[#0066FF] transition">info@gyrocity.ca</a></li>
-                <li>Downtown Toronto, ON</li>
+                <li>898 College St, Toronto ON M6H1A4</li>
               </ul>
             </div>
             <div>

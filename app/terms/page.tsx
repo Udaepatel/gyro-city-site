@@ -120,7 +120,7 @@ export default function TermsPage() {
               <p className="mb-4">Questions about these terms? Contact us:</p>
               <div className="bg-gray-50 p-4 rounded-lg">
                 <p><strong>Email:</strong> info@gyrocity.ca</p>
-                <p><strong>Phone:</strong> (647) 548-8740</p>
+                <p><strong>Phone:</strong> +1 (647) 340-8001</p>
                 <p><strong>Address:</strong> Downtown Toronto, Ontario</p>
               </div>
             </section>

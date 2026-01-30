@@ -58,7 +58,7 @@ export default function EventCateringPage() {
             <Link href="/menu" className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#0066FF] transition-all">
               VIEW PARTY MENU
             </Link>
-            <Link href="tel:6475488740" className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#0066FF] transition-all">
+            <Link href="tel:+16473408001" className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#0066FF] transition-all">
               CALL US NOW
             </Link>
           </div>
@@ -989,8 +989,8 @@ export default function EventCateringPage() {
             <Link href="/quote" className="bg-white text-[#0066FF] px-10 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all shadow-lg">
               GET EVENT QUOTE
             </Link>
-            <Link href="tel:6475488740" className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#0066FF] transition-all">
-              CALL (647) 548-8740
+            <Link href="tel:+16473408001" className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#0066FF] transition-all">
+              CALL +1 (647) 340-8001
             </Link>
             <Link href="/menu" className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#0066FF] transition-all">
               VIEW PARTY MENU
@@ -1059,8 +1059,8 @@ export default function EventCateringPage() {
             <div>
               <h4 className="font-bold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>Toronto, ON</li>
-                <li>Phone: <a href="tel:6475488740" className="hover:text-white">(647) 548-8740</a></li>
+                <li>898 College St, Toronto ON M6H1A4</li>
+                <li>Phone: <a href="tel:+16473408001" className="hover:text-white">+1 (647) 340-8001</a></li>
                 <li>Email: <a href="mailto:info@gyrocity.ca" className="hover:text-white">info@gyrocity.ca</a></li>
               </ul>
             </div>

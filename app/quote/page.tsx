@@ -125,7 +125,7 @@ export default function QuotePage() {
               </p>
               <p className="text-green-600">
                 Check your spam folder if you don't see it. Questions? Call us at{' '}
-                <a href="tel:6475488740" className="underline font-semibold">(647) 548-8740</a>.
+                <a href="tel:+16473408001" className="underline font-semibold">+1 (647) 340-8001</a>.
               </p>
             </div>
           </div>
@@ -377,7 +377,7 @@ export default function QuotePage() {
                         value={formData.eventLocation}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#0066FF] focus:ring-4 focus:ring-[#0066FF]/20 transition-all outline-none"
-                        placeholder="123 Main St, Toronto, ON M5V 1A1"
+                        placeholder="123 Main St, 898 College St, Toronto ON M6H1A4 M5V 1A1"
                       />
                     </div>
 
@@ -598,8 +598,8 @@ export default function QuotePage() {
                   </button>
                   <p className="text-sm text-gray-500 text-center mt-4">
                     We'll respond within 24 hours. For urgent requests, call us at{' '}
-                    <a href="tel:6475488740" className="text-[#0066FF] hover:underline font-semibold">
-                      (647) 548-8740
+                    <a href="tel:+16473408001" className="text-[#0066FF] hover:underline font-semibold">
+                      +1 (647) 340-8001
                     </a>
                   </p>
                 </div>
@@ -864,7 +864,7 @@ export default function QuotePage() {
             <div className="bg-white border-l-4 border-[#0066FF] p-6 rounded-r-xl shadow-md">
               <h3 className="text-xl font-bold mb-2">Q: How long does it take to get a quote?</h3>
               <p className="text-gray-700">
-                <strong>A:</strong> Most quotes sent within 24 hours, often same day. Urgent? Call us for immediate assistance at (647) 548-8740.
+                <strong>A:</strong> Most quotes sent within 24 hours, often same day. Urgent? Call us for immediate assistance at +1 (647) 340-8001.
               </p>
             </div>
 
@@ -919,10 +919,10 @@ export default function QuotePage() {
           <div className="max-w-2xl mx-auto bg-white/10 backdrop-blur-sm rounded-2xl p-8">
             <div className="mb-6">
               <a 
-                href="tel:6475488740" 
+                href="tel:+16473408001" 
                 className="inline-block bg-white text-[#0066FF] px-10 py-5 rounded-lg text-2xl font-bold hover:bg-gray-100 transition-all shadow-lg hover:scale-105"
               >
-                📞 Call (647) 548-8740
+                📞 Call +1 (647) 340-8001
               </a>
             </div>
             
@@ -956,10 +956,10 @@ export default function QuotePage() {
               Fill Out Quote Form →
             </a>
             <a 
-              href="tel:6475488740" 
+              href="tel:+16473408001" 
               className="bg-white border-4 border-[#0066FF] text-[#0066FF] px-10 py-4 rounded-lg text-lg font-bold hover:bg-gray-50 transition-all shadow-lg hover:scale-105"
             >
-              Or Call (647) 548-8740
+              Or Call +1 (647) 340-8001
             </a>
           </div>
 
@@ -1008,9 +1008,9 @@ export default function QuotePage() {
             <div>
               <h3 className="font-bold text-xl mb-4">Contact</h3>
               <ul className="space-y-2">
-                <li>Phone: <a href="tel:6475488740" className="hover:text-[#0066FF] transition">(647) 548-8740</a></li>
+                <li>Phone: <a href="tel:+16473408001" className="hover:text-[#0066FF] transition">+1 (647) 340-8001</a></li>
                 <li>Email: <a href="mailto:info@gyrocity.ca" className="hover:text-[#0066FF] transition">info@gyrocity.ca</a></li>
-                <li>Downtown Toronto, ON</li>
+                <li>898 College St, Toronto ON M6H1A4</li>
               </ul>
             </div>
             <div>

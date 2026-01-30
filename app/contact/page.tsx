@@ -39,10 +39,10 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-bold text-gyro-navy text-lg mb-2">Phone</h3>
                       <a 
-                        href="tel:6475488740" 
+                        href="tel:+16473408001" 
                         className="text-xl text-gyro-gold hover:underline font-semibold"
                       >
-                        (647) 548-8740
+                        +1 (647) 340-8001
                       </a>
                       <p className="text-gray-600 mt-1">Monday - Sunday: 9 AM - 8 PM</p>
                     </div>

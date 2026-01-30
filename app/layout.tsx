@@ -16,7 +16,7 @@ export const metadata = {
     default: "Greek Catering Toronto | Fresh Gyros & Mediterranean Food Delivery | Gyro City",
     template: `%s | Gyro City`,
   },
-  description: "Authentic Greek catering in Toronto. Office catering, corporate events & party platters with fresh gyros, souvlaki. Same-day delivery. Call (647) 548-8740 for quote!",
+  description: "Authentic Greek catering in Toronto. Office catering, corporate events & party platters with fresh gyros, souvlaki. Same-day delivery. Call +1 (647) 340-8001 for quote!",
   keywords: [
     "greek catering toronto",
     "office catering toronto",
@@ -61,7 +61,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Greek Catering Toronto | Gyro City",
-    description: "Authentic Greek catering in Toronto. Office catering, corporate events & party platters. Same-day delivery. Call (647) 548-8740",
+    description: "Authentic Greek catering in Toronto. Office catering, corporate events & party platters. Same-day delivery. Call +1 (647) 340-8001",
     images: ["https://gyrocity.ca/catering-trays.jpg"],
     creator: "@gyrocity",
   },
@@ -90,7 +90,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               "logo": "https://gyrocity.ca/gyro-city-logo.png",
               "@id": "https://gyrocity.ca",
               "url": "https://gyrocity.ca",
-              "telephone": "+16475488740",
+              "telephone": "+1+16473408001",
               "email": "info@gyrocity.ca",
               "priceRange": "$$",
               "address": {
