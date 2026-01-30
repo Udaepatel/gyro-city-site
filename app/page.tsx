@@ -67,35 +67,13 @@ export default function Home() {
             className="relative h-[600px] flex items-center justify-center hidden md:flex"
           >
             <div className="relative w-full h-full flex items-center justify-center">
-              {/* Decorative white flowers */}
-              <div className="absolute top-0 left-0 text-8xl opacity-90">🌸</div>
-              
-              {/* Three catering trays */}
-              <div className="grid grid-cols-3 gap-6 relative z-10">
-                {/* Rice tray */}
-                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl aspect-square flex items-center justify-center border-4 border-gray-300">
-                  <div className="text-center">
-                    <div className="text-6xl mb-2">🍚</div>
-                    <p className="text-gray-700 font-semibold text-sm">Rice</p>
-                  </div>
-                </div>
-                
-                {/* Chicken tray */}
-                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl aspect-square flex items-center justify-center border-4 border-gray-300">
-                  <div className="text-center">
-                    <div className="text-6xl mb-2">🍗</div>
-                    <p className="text-gray-700 font-semibold text-sm">Chicken</p>
-                  </div>
-                </div>
-                
-                {/* Falafel tray */}
-                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl aspect-square flex items-center justify-center border-4 border-gray-300">
-                  <div className="text-center">
-                    <div className="text-6xl mb-2">🧆</div>
-                    <p className="text-gray-700 font-semibold text-sm">Falafel</p>
-                  </div>
-                </div>
-              </div>
+              <Image 
+                src="/catering-trays.jpg" 
+                alt="Greek catering trays with rice, chicken, and falafel" 
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
           </motion.div>
         </div>
