@@ -100,19 +100,15 @@ export default function Home() {
       </div>
 
       {/* Social Proof Section */}
-      <AnimatedSection className="py-20 bg-gray-50">
+      <AnimatedSection className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <span className="text-5xl">⭐⭐⭐⭐⭐</span>
-            </div>
-            <h2 className="text-4xl font-bold font-playfair text-gyro-navy mb-2">
+          <div className="mb-16">
+            <h2 className="text-5xl md:text-6xl font-bold text-black mb-2 uppercase tracking-wide">
               Loved by Toronto Businesses
             </h2>
-            <p className="text-xl text-gray-600">4.9 out of 5 stars based on 23 Google reviews</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {[
               { text: "Best Greek catering in Toronto! The gyros were a huge hit at our corporate event. Fresh ingredients and amazing flavors.", name: "Sarah M.", event: "Corporate Event, 50 people" },
               { text: "Gyro City saved our office lunch. Quick delivery, generous portions, and everyone loved the variety of options. Highly recommend!", name: "Michael Chen", event: "Office Catering, Downtown" },
@@ -124,12 +120,12 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.5 }}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow"
+                className="bg-gray-50 border-4 border-[#0066FF] rounded-3xl p-12 min-h-[350px] flex flex-col items-center justify-center text-center"
               >
-                <div className="text-gyro-gold mb-3">⭐⭐⭐⭐⭐</div>
-                <p className="text-gray-700 mb-4 italic">"{testimonial.text}"</p>
-                <p className="font-semibold text-gyro-navy">{testimonial.name}</p>
-                <p className="text-sm text-gray-600">{testimonial.event}</p>
+                <div className="text-6xl mb-8">•</div>
+                <p className="text-xl text-black mb-8 leading-relaxed">"{testimonial.text}"</p>
+                <p className="text-lg text-black font-medium">{testimonial.name}</p>
+                <p className="text-sm text-gray-600 mt-2">{testimonial.event}</p>
               </motion.div>
             ))}
           </div>
