@@ -9,7 +9,7 @@ export default function OfficeCateringPage() {
     <main className="min-h-screen bg-white">
       {/* Moving Text Marquee */}
       <div className="bg-white text-black py-3 overflow-hidden border-b border-gray-200">
-        <div className="whitespace-nowrap animate-marquee-slow text-lg font-medium">
+        <div className="whitespace-nowrap animate-marquee-slow text-base md:text-lg font-medium tracking-wide">
           Office Catering • Same Day Catering • Lunch Box Catering • Buffet Style Trays • Sandwich Platter
           &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
           Office Catering • Same Day Catering • Lunch Box Catering • Buffet Style Trays • Sandwich Platter
@@ -42,7 +42,7 @@ export default function OfficeCateringPage() {
       {/* Hero Section */}
       <section className="bg-[#0066FF] text-white py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold font-playfair mb-6">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-playfair leading-tight mb-6">
             Downtown Toronto Office Catering
           </h1>
           <p className="text-xl md:text-2xl mb-4 max-w-3xl mx-auto">
@@ -85,7 +85,7 @@ export default function OfficeCateringPage() {
       {/* Why Choose Section */}
       <AnimatedSection className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-12 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold font-playfair mb-12 text-center italic">
             Why Downtown Toronto Offices Love Gyro City
           </h2>
           
@@ -93,7 +93,7 @@ export default function OfficeCateringPage() {
             {/* Always On Time */}
             <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
               <div className="text-4xl mb-4">⏰</div>
-              <h3 className="text-2xl font-bold mb-3">Always On Time</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair mb-4">Always On Time</h3>
               <p className="text-gray-700 mb-4">
                 Your lunch arrives exactly when promised. We understand busy schedules and respect your team's time.
               </p>
@@ -110,7 +110,7 @@ export default function OfficeCateringPage() {
             {/* Fresh & Delicious */}
             <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
               <div className="text-4xl mb-4">🥙</div>
-              <h3 className="text-2xl font-bold mb-3">Fresh & Delicious</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair mb-4">Fresh & Delicious</h3>
               <p className="text-gray-700 mb-4">
                 Made fresh every morning. Never frozen. Real ingredients. Authentic Greek recipes that keep your team energized.
               </p>
@@ -128,7 +128,7 @@ export default function OfficeCateringPage() {
             {/* Budget-Friendly */}
             <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
               <div className="text-4xl mb-4">💰</div>
-              <h3 className="text-2xl font-bold mb-3">Budget-Friendly</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair mb-4">Budget-Friendly</h3>
               <p className="text-gray-700 mb-4">
                 Quality office catering that fits your budget. Packages starting at $14.99/person with no hidden fees.
               </p>
@@ -146,7 +146,7 @@ export default function OfficeCateringPage() {
             {/* Hassle-Free Service */}
             <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
               <div className="text-4xl mb-4">🍽️</div>
-              <h3 className="text-2xl font-bold mb-3">Hassle-Free Service</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair mb-4">Hassle-Free Service</h3>
               <p className="text-gray-700 mb-4">
                 We handle everything - delivery, setup, supplies, and cleanup. You just enjoy great food.
               </p>
@@ -165,7 +165,7 @@ export default function OfficeCateringPage() {
             {/* Dietary Flexibility */}
             <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
               <div className="text-4xl mb-4">🌱</div>
-              <h3 className="text-2xl font-bold mb-3">Dietary Flexibility</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair mb-4">Dietary Flexibility</h3>
               <p className="text-gray-700 mb-4">
                 Halal, vegetarian, vegan, gluten-free - we accommodate all dietary needs without compromise on flavor.
               </p>
@@ -183,7 +183,7 @@ export default function OfficeCateringPage() {
             {/* Easy Ordering */}
             <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
               <div className="text-4xl mb-4">📱</div>
-              <h3 className="text-2xl font-bold mb-3">Easy Ordering</h3>
+              <h3 className="text-2xl md:text-3xl font-bold font-playfair mb-4">Easy Ordering</h3>
               <p className="text-gray-700 mb-4">
                 Order online in 2 minutes. Set up recurring deliveries. Modify orders easily. Track delivery in real-time.
               </p>
@@ -207,7 +207,7 @@ export default function OfficeCateringPage() {
       {/* Office Lunch Packages */}
       <AnimatedSection className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-12 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold font-playfair mb-12 text-center italic">
             Office Lunch Packages - Perfect for Toronto Teams
           </h2>
           
@@ -216,7 +216,7 @@ export default function OfficeCateringPage() {
             <div className="bg-white border-2 border-[#0066FF] rounded-xl p-8">
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">Individual Office Lunch Boxes</h3>
+                  <h3 className="text-2xl md:text-3xl font-bold font-playfair mb-4">Individual Office Lunch Boxes</h3>
                   <p className="text-[#0066FF] font-semibold text-lg">$15.99/person</p>
                 </div>
                 <div className="bg-[#0066FF] text-white px-4 py-2 rounded-lg font-bold">
