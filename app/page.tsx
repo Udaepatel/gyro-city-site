@@ -132,6 +132,138 @@ export default function Home() {
         </div>
       </AnimatedSection>
 
+      {/* The Art of Greek Catering Section */}
+      <AnimatedSection className="py-20 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-5xl md:text-6xl font-bold font-playfair text-black mb-6 italic">
+              The Art of Greek Catering
+            </h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+              Premium gyro platters and artisanal Mediterranean feasts. We specialize in Office catering delivery in Toronto, bringing the vibrancy of Athens directly to your event.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Corporate Lunch Box */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="bg-[#0066FF] text-white rounded-lg overflow-hidden shadow-xl"
+            >
+              <div className="h-64 bg-gray-200 relative">
+                <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold bg-[#0066FF]/60">
+                  [Corporate Lunch Box Image]
+                </div>
+              </div>
+              <div className="p-8">
+                <h3 className="text-3xl font-bold mb-4 uppercase">Corporate Lunch Box</h3>
+                <p className="text-lg mb-2 font-semibold">Starting at $15.99/person</p>
+                <ul className="space-y-2 mb-6 text-white/90">
+                  <li>• Classic Gyro Box</li>
+                  <li>• Chicken Souvlaki Box</li>
+                  <li>• Vegetarian Mediterranean Box</li>
+                  <li>• Includes: Main, Greek salad, rice, pita, tzatziki</li>
+                </ul>
+                <Link href="/menu" className="inline-block bg-white text-[#0066FF] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                  Order Individual Boxes →
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Build Your Own Buffet */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="bg-[#0066FF] text-white rounded-lg overflow-hidden shadow-xl"
+            >
+              <div className="h-64 bg-gray-200 relative">
+                <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold bg-[#0066FF]/60">
+                  [Build Your Own Buffet Image]
+                </div>
+              </div>
+              <div className="p-8">
+                <h3 className="text-3xl font-bold mb-4 uppercase">Build Your Own Buffet</h3>
+                <p className="text-lg mb-2 font-semibold">Starting at $18.99/person (Min. 15)</p>
+                <ul className="space-y-2 mb-6 text-white/90">
+                  <li>• Protein: Chicken Souvlaki, Beef Gyro, Lamb, Falafel</li>
+                  <li>• Mezze platter: Hummus, tzatziki, spanakopita, dolmades</li>
+                  <li>• Classic Greek salad</li>
+                  <li>• Warm pita bread & Hand-cut Greek potatoes</li>
+                </ul>
+                <Link href="/quote" className="inline-block bg-white text-[#0066FF] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                  Get Custom Quote →
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Sandwich Platter */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="bg-[#0066FF] text-white rounded-lg overflow-hidden shadow-xl"
+            >
+              <div className="h-64 bg-gray-200 relative">
+                <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold bg-[#0066FF]/60">
+                  [Sandwich Platter Image]
+                </div>
+              </div>
+              <div className="p-8">
+                <h3 className="text-3xl font-bold mb-4 uppercase">Sandwich Platter</h3>
+                <p className="text-lg mb-2 font-semibold">Starting at $89.99 (Serves 6-8)</p>
+                <ul className="space-y-2 mb-6 text-white/90">
+                  <li>• Mixed Gyro Platter</li>
+                  <li>• Souvlaki Skewer Platter</li>
+                  <li>• Mezze Appetizer Platter</li>
+                  <li>• Signature Greek Salad Platter</li>
+                </ul>
+                <Link href="/menu" className="inline-block bg-white text-[#0066FF] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                  View Full Menu →
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Salad Bar */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="bg-[#0066FF] text-white rounded-lg overflow-hidden shadow-xl"
+            >
+              <div className="h-64 bg-gray-200 relative">
+                <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold bg-[#0066FF]/60">
+                  [Fresh Salad Bar Image]
+                </div>
+              </div>
+              <div className="p-8">
+                <h3 className="text-3xl font-bold mb-4 uppercase">Fresh Salad Bar</h3>
+                <p className="text-lg mb-2 font-semibold">Starting at $12.99/person</p>
+                <ul className="space-y-2 mb-6 text-white/90">
+                  <li>• Choice of protein: Chicken gyro, beef/lamb gyro, falafel or chicken souvlaki</li>
+                  <li>• Fresh Greek salad with feta & olives</li>
+                  <li>• Pita bread & tzatziki sauce</li>
+                  <li>• Roasted potatoes and rice</li>
+                </ul>
+                <Link href="/quote" className="inline-block bg-white text-[#0066FF] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                  Inquire Now →
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-2xl font-bold text-black">Same-Day Catering Delivery Across the GTA</p>
+          </div>
+        </div>
+      </AnimatedSection>
+
       {/* How It Works Section */}
       <AnimatedSection className="py-20 bg-white">
         <div className="container mx-auto px-4">
