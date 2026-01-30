@@ -90,15 +90,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Marquee Section */}
-      <div className="bg-gyro-gold text-white py-4 overflow-hidden">
-        <div className="animate-marquee whitespace-nowrap text-xl font-semibold">
-          AUTHENTIC GREEK CATERING • DOWNTOWN TORONTO • FRESH NEVER FROZEN • HALAL & VEGETARIAN OPTIONS
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          AUTHENTIC GREEK CATERING • DOWNTOWN TORONTO • FRESH NEVER FROZEN • HALAL & VEGETARIAN OPTIONS
-        </div>
-      </div>
-
       {/* Social Proof Section */}
       <AnimatedSection className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -267,11 +258,11 @@ export default function Home() {
       {/* How It Works Section */}
       <AnimatedSection className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold font-playfair text-gyro-navy text-center mb-16">
+          <h2 className="text-5xl md:text-6xl font-bold text-black text-center mb-16 uppercase">
             How It Works
           </h2>
 
-          <div className="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {[
               { step: "1", title: "Choose Your Menu", icon: "📋", desc: "Select from our authentic Greek dishes" },
               { step: "2", title: "Request Quote", icon: "💬", desc: "Tell us your event details" },
@@ -284,114 +275,28 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15, duration: 0.5 }}
-                className="text-center"
+                className="text-center bg-gray-50 p-8 rounded-lg border-2 border-gray-200"
               >
                 <div className="text-6xl mb-4">{item.icon}</div>
-                <div className="w-12 h-12 bg-gyro-navy text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">
+                <div className="w-16 h-16 bg-[#0066FF] text-white rounded-full flex items-center justify-center font-bold text-2xl mx-auto mb-4">
                   {item.step}
                 </div>
-                <h3 className="text-xl font-bold text-gyro-navy mb-2">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
+                <h3 className="text-xl font-bold text-black mb-3">{item.title}</h3>
+                <p className="text-gray-700">{item.desc}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </AnimatedSection>
 
-      {/* Packages Section */}
-      <AnimatedSection className="py-20 bg-gyro-cream">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold font-playfair text-gyro-navy text-center mb-4">
-            Catering Packages & Pricing
-          </h2>
-          <p className="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            Fresh, authentic Greek food for every occasion
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                name: "Individual Lunch Boxes",
-                price: "Starting at $15.99",
-                perPerson: "/person",
-                features: [
-                  "Choice of Gyro, Souvlaki, or Falafel",
-                  "Greek Salad & Pita",
-                  "Tzatziki Sauce",
-                  "Individually Packaged",
-                  "Perfect for office lunches",
-                ],
-                cta: "Order Now",
-                link: "/order"
-              },
-              {
-                name: "Party Platters",
-                price: "Starting at $89.99",
-                perPerson: "/platter",
-                features: [
-                  "Serves 6-8 people",
-                  "Mixed Gyro & Souvlaki",
-                  "Fresh Greek Salad",
-                  "Pita, Sauces & Sides",
-                  "Ideal for gatherings",
-                ],
-                popular: true,
-                cta: "Get Quote",
-                link: "/quote"
-              },
-              {
-                name: "Full Catering Service",
-                price: "Starting at $18.99",
-                perPerson: "/person",
-                features: [
-                  "Minimum 15 people",
-                  "Customizable Menu",
-                  "Setup & Delivery Included",
-                  "Corporate & Events",
-                  "Premium service",
-                ],
-                cta: "Request Quote",
-                link: "/quote"
-              },
-            ].map((pkg, i) => (
-              <GyroCard key={i} className={pkg.popular ? "ring-4 ring-gyro-gold relative" : ""}>
-                {pkg.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gyro-gold text-white px-4 py-1 rounded-full text-sm font-bold">
-                    Most Popular
-                  </div>
-                )}
-                <h3 className="text-2xl font-bold font-playfair text-gyro-navy mb-3">
-                  {pkg.name}
-                </h3>
-                <div className="mb-4">
-                  <span className="text-3xl font-bold text-gyro-gold">{pkg.price}</span>
-                  <span className="text-gray-600">{pkg.perPerson}</span>
-                </div>
-                <ul className="space-y-3 mb-6">
-                  {pkg.features.map((feature, j) => (
-                    <li key={j} className="flex items-start gap-2 text-gray-700">
-                      <span className="text-gyro-gold mt-1">✓</span>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <GyroButton href={pkg.link} variant={pkg.popular ? "primary" : "secondary"} className="w-full">
-                  {pkg.cta} →
-                </GyroButton>
-              </GyroCard>
-            ))}
-          </div>
-        </div>
-      </AnimatedSection>
-
       {/* Why Choose Us Section */}
-      <AnimatedSection className="py-20 bg-white">
+      <AnimatedSection className="py-20 bg-[#0066FF] text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold font-playfair text-gyro-navy text-center mb-16">
+          <h2 className="text-5xl md:text-6xl font-bold text-white text-center mb-16 uppercase">
             Why Choose Gyro City?
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               { icon: "🥙", title: "Authentic Greek", desc: "Traditional recipes passed down through generations" },
               { icon: "🚚", title: "Reliable Delivery", desc: "On-time delivery across downtown Toronto" },
@@ -406,11 +311,11 @@ export default function Home() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.4 }}
-                className="text-center p-6 rounded-lg hover:bg-gray-50 transition-colors"
+                className="text-center p-8 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20"
               >
                 <div className="text-6xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-bold text-gyro-navy mb-2">{feature.title}</h3>
-                <p className="text-gray-600">{feature.desc}</p>
+                <h3 className="text-2xl font-bold text-white mb-3">{feature.title}</h3>
+                <p className="text-white/90">{feature.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -418,12 +323,12 @@ export default function Home() {
       </AnimatedSection>
 
       {/* Delivery Areas Section */}
-      <AnimatedSection className="py-20 bg-gyro-navy text-white">
+      <AnimatedSection className="py-20 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-playfair mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold text-black mb-6 uppercase">
             We Deliver Across Toronto
           </h2>
-          <p className="text-xl mb-8 text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl mb-8 text-gray-700 max-w-2xl mx-auto">
             Fast, reliable catering delivery to downtown Toronto and surrounding areas
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-lg">
@@ -434,7 +339,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20"
+                className="bg-gray-100 px-6 py-3 rounded-lg border-2 border-[#0066FF] text-black font-semibold"
               >
                 {area}
               </motion.div>
@@ -509,21 +414,21 @@ export default function Home() {
       </AnimatedSection>
 
       {/* Final CTA Section */}
-      <AnimatedSection className="py-20 bg-gradient-to-r from-gyro-gold to-gyro-gold-hover text-white">
+      <AnimatedSection className="py-20 bg-[#0066FF] text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-playfair mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 uppercase">
             Ready to Order Authentic Greek Catering?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Get your free quote today and discover why we're Toronto's favorite Greek catering service
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <GyroButton href="/quote" variant="secondary" className="bg-white text-gyro-navy hover:bg-gray-100 border-0">
+            <Link href="/quote" className="bg-white text-[#0066FF] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
               Get Free Quote →
-            </GyroButton>
-            <GyroButton href="tel:6475488740" variant="ghost" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-gyro-gold">
+            </Link>
+            <Link href="tel:6475488740" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#0066FF] transition">
               Call (647) 548-8740
-            </GyroButton>
+            </Link>
           </div>
         </div>
       </AnimatedSection>
