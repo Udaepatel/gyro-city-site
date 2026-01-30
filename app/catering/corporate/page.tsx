@@ -5,11 +5,6 @@ import { motion } from 'framer-motion'
 import { AnimatedSection } from '@/components/ui/animated-section'
 import { GyroButton } from '@/components/ui/gyro-button'
 
-export const metadata = {
-  title: 'Corporate Event Catering Toronto | Greek Business Catering | Gyro City',
-  description: 'Impress at your Toronto corporate event with Gyro City\'s authentic Greek catering. Conferences, meetings, seminars & business functions. Professional service & delicious Mediterranean cuisine.',
-}
-
 export default function CorporateCateringPage() {
   return (
     <main className="min-h-screen bg-white">
