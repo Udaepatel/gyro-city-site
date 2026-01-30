@@ -55,7 +55,7 @@ export default function OrderPage() {
                   Catering Orders
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  For groups of 10+. Get a custom quote with flexible packages and delivery included.
+                  For groups of 10+. Get a custom quote with flexible packages and delivery available.
                 </p>
                 <GyroButton href="/quote" variant="primary" className="w-full">
                   Get Quote →

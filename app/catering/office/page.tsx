@@ -135,7 +135,7 @@ export default function OfficeCateringPage() {
               <div className="bg-gray-50 p-4 rounded-lg">
                 <p className="font-semibold mb-2">Transparent pricing:</p>
                 <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• No delivery fees (downtown Toronto)</li>
+                  <li>• Competitive delivery rates</li>
                   <li>• No setup charges</li>
                   <li>• No minimum on recurring orders</li>
                   <li>• Volume discounts available</li>
@@ -531,9 +531,9 @@ export default function OfficeCateringPage() {
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Free Delivery Zones */}
+            {/* Delivery Service Areas */}
             <div className="bg-white border-2 border-[#0066FF] rounded-xl p-8">
-              <h3 className="text-2xl font-bold mb-4">Free Delivery Zones</h3>
+              <h3 className="text-2xl font-bold mb-4">Delivery Service Areas</h3>
               <ul className="grid grid-cols-2 gap-2 text-gray-700 mb-6">
                 <li>• Financial District</li>
                 <li>• Entertainment District</li>
@@ -767,7 +767,7 @@ export default function OfficeCateringPage() {
 
             <div className="bg-white border-l-4 border-[#0066FF] p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2">Is there a delivery fee?</h3>
-              <p className="text-gray-700">Free delivery to downtown Toronto core. Small fee ($15-25) for extended areas.</p>
+              <p className="text-gray-700">Delivery fee applies based on location and order size (typically $15-50). Contact us for a quote.</p>
             </div>
 
             <div className="bg-white border-l-4 border-[#0066FF] p-6 rounded-lg">

@@ -61,8 +61,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold text-[#1E3A8A] mb-4">4. Delivery</h2>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Free delivery on orders over $200 within downtown Toronto</li>
-                <li>Delivery fee of $25-$50 for orders under $200 or outside core area</li>
+                <li>Delivery fee applies based on order size and location (typically $25-$50)</li>
                 <li>Delivery windows are 2-hour blocks (we will notify you 30 minutes before arrival)</li>
                 <li>Customer must provide accessible delivery location and parking if required</li>
                 <li>Gyro City is not responsible for delays caused by traffic, weather, or access issues beyond our control</li>
