@@ -9,7 +9,7 @@ export default function EventCateringPage() {
     <main className="min-h-screen bg-white">
       {/* Moving Text Marquee */}
       <div className="bg-white text-black py-3 overflow-hidden border-b border-gray-200">
-        <div className="whitespace-nowrap animate-marquee-slow text-lg font-medium">
+        <div className="whitespace-nowrap animate-marquee-slow text-base md:text-lg font-medium tracking-wide">
           Birthday Parties • Wedding Receptions • Anniversary Celebrations • Family Reunions • Graduation Parties • Engagement Events
           &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
           Birthday Parties • Wedding Receptions • Anniversary Celebrations • Family Reunions • Graduation Parties • Engagement Events
@@ -42,7 +42,7 @@ export default function EventCateringPage() {
       {/* Hero Section */}
       <section className="bg-[#0066FF] text-white py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold font-playfair mb-6">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-playfair leading-tight mb-6">
             Toronto Event Catering
           </h1>
           <p className="text-xl md:text-2xl mb-4 max-w-3xl mx-auto">

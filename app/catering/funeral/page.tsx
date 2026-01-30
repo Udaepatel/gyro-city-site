@@ -9,7 +9,7 @@ export default function FuneralCateringPage() {
     <main className="min-h-screen bg-white">
       {/* Moving Text Marquee */}
       <div className="bg-white text-black py-3 overflow-hidden border-b border-gray-200">
-        <div className="whitespace-nowrap animate-marquee-slow text-lg font-medium">
+        <div className="whitespace-nowrap animate-marquee-slow text-base md:text-lg font-medium tracking-wide">
           Compassionate Funeral Catering • Memorial Service Catering • Celebration of Life • Repast Catering Toronto • Bereavement Support
           &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
           Compassionate Funeral Catering • Memorial Service Catering • Celebration of Life • Repast Catering Toronto • Bereavement Support
@@ -42,7 +42,7 @@ export default function FuneralCateringPage() {
       {/* Hero Section */}
       <section className="bg-white py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold font-playfair mb-6 text-black">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-playfair leading-tight mb-6 text-black">
             Compassionate Funeral Catering in Toronto
           </h1>
           <p className="text-xl md:text-2xl mb-6 max-w-3xl mx-auto text-gray-700">
