@@ -439,9 +439,9 @@ export default function Home() {
       </AnimatedSection>
 
       {/* Footer */}
-      <footer className="bg-gyro-navy text-white py-12">
+      <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-4 gap-8">
             <div>
               <Image 
                 src="/gyro-city-logo-white.jpg" 
@@ -450,44 +450,37 @@ export default function Home() {
                 height={45} 
                 className="h-10 w-auto mb-4"
               />
-              <p className="text-gray-400 text-sm">Toronto's Authentic Greek Catering</p>
+              <p className="text-gray-400">Toronto's Authentic Greek Catering</p>
             </div>
             <div>
-              <h3 className="font-bold text-xl mb-4 font-playfair">Quick Links</h3>
-              <ul className="space-y-2">
-                <li><Link href="/menu" className="hover:text-gyro-gold transition">Menu</Link></li>
-                <li><Link href="/about" className="hover:text-gyro-gold transition">About Us</Link></li>
-                <li><Link href="/contact" className="hover:text-gyro-gold transition">Contact</Link></li>
-                <li><Link href="/quote" className="hover:text-gyro-gold transition">Get Quote</Link></li>
+              <h4 className="font-bold mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li><Link href="/menu" className="hover:text-white transition">Menu</Link></li>
+                <li><Link href="/catering" className="hover:text-white transition">Catering</Link></li>
+                <li><Link href="/about" className="hover:text-white transition">About</Link></li>
+                <li><Link href="/contact" className="hover:text-white transition">Contact</Link></li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold text-xl mb-4 font-playfair">Catering Services</h3>
-              <ul className="space-y-2">
-                <li><Link href="/catering/office" className="hover:text-gyro-gold transition">Office Catering</Link></li>
-                <li><Link href="/catering/corporate" className="hover:text-gyro-gold transition">Corporate Events</Link></li>
-                <li><Link href="/catering/events" className="hover:text-gyro-gold transition">Event Catering</Link></li>
-                <li><Link href="/catering/funeral" className="hover:text-gyro-gold transition">Funeral Catering</Link></li>
+              <h4 className="font-bold mb-4">Catering Services</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li><Link href="/catering/office" className="hover:text-white transition">Office Catering</Link></li>
+                <li><Link href="/catering/corporate" className="hover:text-white transition">Corporate Events</Link></li>
+                <li><Link href="/catering/events" className="hover:text-white transition">Event Catering</Link></li>
+                <li><Link href="/catering/funeral" className="hover:text-white transition">Funeral Catering</Link></li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold text-xl mb-4 font-playfair">Contact</h3>
-              <ul className="space-y-2">
-                <li>Phone: <a href="tel:6475488740" className="hover:text-gyro-gold transition">(647) 548-8740</a></li>
-                <li>Email: <a href="mailto:info@gyrocity.ca" className="hover:text-gyro-gold transition">info@gyrocity.ca</a></li>
-                <li>Downtown Toronto, ON</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold text-xl mb-4 font-playfair">Legal</h3>
-              <ul className="space-y-2">
-                <li><Link href="/privacy" className="hover:text-gyro-gold transition">Privacy Policy</Link></li>
-                <li><Link href="/terms" className="hover:text-gyro-gold transition">Terms of Service</Link></li>
+              <h4 className="font-bold mb-4">Contact</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li>Toronto, ON</li>
+                <li>Phone: <a href="tel:6475488740" className="hover:text-white transition">(647) 548-8740</a></li>
+                <li>Email: <a href="mailto:info@gyrocity.ca" className="hover:text-white transition">info@gyrocity.ca</a></li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-white/20 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Gyro City. All rights reserved. Toronto Greek Catering.</p>
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+            <p>&copy; {new Date().getFullYear()} Gyro City. All rights reserved.</p>
           </div>
         </div>
       </footer>
