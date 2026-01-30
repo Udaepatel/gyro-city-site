@@ -142,33 +142,6 @@ export default function QuotePage() {
             <p className="text-xl md:text-2xl mb-8 text-white/90">
               Tell us about your event and we'll create a custom quote within 24 hours. No obligation, transparent pricing.
             </p>
-            
-            {/* What Happens Next */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mt-12">
-              <h3 className="text-2xl font-bold mb-6">What happens next:</h3>
-              <div className="grid md:grid-cols-5 gap-4 text-sm">
-                <div>
-                  <div className="w-12 h-12 bg-white text-[#0066FF] rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-3">1</div>
-                  <p>✅ You fill out the form (2 minutes)</p>
-                </div>
-                <div>
-                  <div className="w-12 h-12 bg-white text-[#0066FF] rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-3">2</div>
-                  <p>✅ We review your event details</p>
-                </div>
-                <div>
-                  <div className="w-12 h-12 bg-white text-[#0066FF] rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-3">3</div>
-                  <p>✅ You receive a detailed quote via email (within 24 hours)</p>
-                </div>
-                <div>
-                  <div className="w-12 h-12 bg-white text-[#0066FF] rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-3">4</div>
-                  <p>✅ We answer any questions and finalize details</p>
-                </div>
-                <div>
-                  <div className="w-12 h-12 bg-white text-[#0066FF] rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-3">5</div>
-                  <p>✅ Your event is booked - stress-free catering sorted!</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
