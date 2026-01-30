@@ -25,14 +25,16 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-[#0066FF] backdrop-blur-lg text-white shadow-lg">
         <div className="container mx-auto px-4 py-5 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
-            <Image 
-              src="/gyro-city-logo-black.jpg" 
-              alt="Gyro City" 
-              width={300} 
-              height={90} 
-              className="h-14 w-auto bg-white px-3 py-1 rounded"
-              priority
-            />
+            <div className="bg-white px-4 py-2 rounded-lg shadow-sm">
+              <Image 
+                src="/gyro-city-logo-black.jpg" 
+                alt="Gyro City" 
+                width={300} 
+                height={90} 
+                className="h-12 w-auto group-hover:opacity-80 transition-opacity"
+                priority
+              />
+            </div>
           </Link>
           <div className="hidden md:flex gap-10 items-center">
             <Link href="/" className="hover:text-white/80 transition-colors duration-200 font-medium underline underline-offset-4">Home</Link>
@@ -443,13 +445,15 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <Image 
-                src="/gyro-city-logo-black.jpg" 
-                alt="Gyro City" 
-                width={200} 
-                height={60} 
-                className="h-12 w-auto mb-4 bg-white px-2 py-1 rounded"
-              />
+              <div className="bg-white px-3 py-2 rounded-lg inline-block mb-4">
+                <Image 
+                  src="/gyro-city-logo-black.jpg" 
+                  alt="Gyro City" 
+                  width={200} 
+                  height={60} 
+                  className="h-10 w-auto"
+                />
+              </div>
               <p className="text-gray-400">Toronto's Authentic Greek Catering</p>
             </div>
             <div>

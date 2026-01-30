@@ -26,14 +26,16 @@ export function SharedNav() {
       <nav className="sticky top-0 z-50 bg-[#0066FF] backdrop-blur-lg text-white shadow-lg">
       <div className="container mx-auto px-4 py-5 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
-          <Image 
-            src="/gyro-city-logo-black.jpg" 
-            alt="Gyro City - Authentic Greek Catering" 
-            width={300} 
-            height={90} 
-            className="h-14 w-auto group-hover:opacity-90 transition-opacity bg-white px-3 py-1 rounded" 
-            priority
-          />
+          <div className="bg-white px-4 py-2 rounded-lg shadow-sm">
+            <Image 
+              src="/gyro-city-logo-black.jpg" 
+              alt="Gyro City - Authentic Greek Catering" 
+              width={300} 
+              height={90} 
+              className="h-12 w-auto group-hover:opacity-80 transition-opacity" 
+              priority
+            />
+          </div>
         </Link>
         
         <div className="hidden md:flex gap-10 items-center text-white">
