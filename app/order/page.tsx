@@ -1,145 +1,186 @@
-import Image from 'next/image'
-import Link from 'next/link'
+'use client'
 
-export const metadata = {
-  title: 'Order Online | Gyro City Toronto Greek Catering',
-  description: 'Order authentic Greek catering online for your Toronto event. Quick, easy ordering with delivery throughout the GTA.',
-}
+import { SharedNav } from '@/components/shared-nav'
+import { SharedFooter } from '@/components/shared-footer'
+import { AnimatedSection } from '@/components/ui/animated-section'
+import { GyroButton } from '@/components/ui/gyro-button'
+import { GyroCard } from '@/components/ui/gyro-card'
 
 export default function OrderPage() {
   return (
-    <main className="min-h-screen bg-white">
-      <nav className="sticky top-0 z-50 bg-[#1E3A8A] text-white shadow-lg">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <Image src="/gyro-city-logo.png" alt="Gyro City" width={50} height={50} className="rounded-full" />
-            <span className="text-2xl font-bold">GYRO CITY</span>
-          </Link>
-          <div className="hidden md:flex gap-6">
-            <Link href="/menu" className="hover:text-[#B8860B] transition">Menu</Link>
-            <Link href="/catering" className="hover:text-[#B8860B] transition">Catering</Link>
-            <Link href="/about" className="hover:text-[#B8860B] transition">About</Link>
-            <Link href="/contact" className="hover:text-[#B8860B] transition">Contact</Link>
-          </div>
-          <Link href="/quote" className="bg-[#B8860B] text-white px-6 py-2 rounded-lg hover:bg-[#9A7209] transition font-semibold">
-            Get Quote
-          </Link>
-        </div>
-      </nav>
+    <main className="min-h-screen bg-gray-50">
+      <SharedNav />
 
-      <section className="bg-gradient-to-r from-[#1E3A8A] to-[#2563EB] text-white py-20">
+      {/* Hero Section */}
+      <AnimatedSection className="bg-gradient-to-br from-gyro-navy via-blue-900 to-gyro-navy text-white py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6">Order Greek Catering Online</h1>
-          <p className="text-xl max-w-2xl mx-auto">
-            Three easy ways to place your catering order
+          <h1 className="text-5xl md:text-6xl font-bold font-playfair mb-6">
+            Order Online
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
+            Fresh Greek catering delivered to your Toronto location
           </p>
         </div>
-      </section>
+      </AnimatedSection>
 
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
-            <div className="bg-white p-8 rounded-lg shadow-xl text-center">
-              <div className="text-6xl mb-4">📞</div>
-              <h3 className="text-2xl font-bold text-[#1E3A8A] mb-4">Call Us</h3>
-              <p className="text-gray-700 mb-6">
-                Speak directly with our catering team for personalized assistance
-              </p>
-              <a 
-                href="tel:6475488740" 
-                className="inline-block bg-[#B8860B] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#9A7209] transition"
-              >
-                (647) 548-8740
-              </a>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-xl text-center border-4 border-[#B8860B]">
-              <div className="bg-[#B8860B] text-white px-4 py-1 rounded-full text-sm font-semibold inline-block mb-4">
-                RECOMMENDED
+      <div className="container mx-auto px-4 py-16">
+        {/* Order Options */}
+        <AnimatedSection className="max-w-4xl mx-auto mb-16">
+          <h2 className="text-3xl font-bold font-playfair text-gyro-navy text-center mb-8">
+            Choose Your Order Type
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <GyroCard>
+              <div className="text-center">
+                <div className="text-6xl mb-4">🥙</div>
+                <h3 className="text-2xl font-bold font-playfair text-gyro-navy mb-4">
+                  Individual Orders
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Perfect for personal meals or small groups. Choose from our menu of gyros, souvlaki, and sides.
+                </p>
+                <GyroButton href="/menu" variant="secondary" className="w-full">
+                  View Menu →
+                </GyroButton>
               </div>
-              <div className="text-6xl mb-4">📋</div>
-              <h3 className="text-2xl font-bold text-[#1E3A8A] mb-4">Request Quote</h3>
-              <p className="text-gray-700 mb-6">
-                Fill out our form and get a custom quote within 24 hours
-              </p>
-              <Link 
-                href="/quote" 
-                className="inline-block bg-[#B8860B] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#9A7209] transition"
-              >
-                Get Free Quote
-              </Link>
-            </div>
+            </GyroCard>
 
-            <div className="bg-white p-8 rounded-lg shadow-xl text-center">
-              <div className="text-6xl mb-4">📧</div>
-              <h3 className="text-2xl font-bold text-[#1E3A8A] mb-4">Email Us</h3>
-              <p className="text-gray-700 mb-6">
-                Send your catering requirements and we'll respond promptly
-              </p>
-              <a 
-                href="mailto:info@gyrocity.ca" 
-                className="inline-block bg-[#1E3A8A] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#2563EB] transition"
-              >
-                info@gyrocity.ca
-              </a>
-            </div>
+            <GyroCard className="ring-4 ring-gyro-gold relative">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gyro-gold text-white px-4 py-1 rounded-full text-sm font-bold">
+                Popular
+              </div>
+              <div className="text-center">
+                <div className="text-6xl mb-4">🍽️</div>
+                <h3 className="text-2xl font-bold font-playfair text-gyro-navy mb-4">
+                  Catering Orders
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  For groups of 10+. Get a custom quote with flexible packages and delivery included.
+                </p>
+                <GyroButton href="/quote" variant="primary" className="w-full">
+                  Get Quote →
+                </GyroButton>
+              </div>
+            </GyroCard>
           </div>
+        </AnimatedSection>
 
-          {/* Order Process */}
-          <div className="max-w-4xl mx-auto bg-gray-50 p-8 rounded-lg">
-            <h2 className="text-3xl font-bold text-[#1E3A8A] text-center mb-8">How It Works</h2>
-            <div className="grid md:grid-cols-4 gap-6">
-              {[
-                { step: '1', title: 'Choose', desc: 'Select your menu items and package' },
-                { step: '2', title: 'Request', desc: 'Submit quote or call us directly' },
-                { step: '3', title: 'Confirm', desc: 'Review quote and approve order' },
-                { step: '4', title: 'Deliver', desc: 'We deliver fresh, hot food on time' }
-              ].map((item, i) => (
-                <div key={i} className="text-center">
-                  <div className="w-16 h-16 bg-[#B8860B] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                    {item.step}
-                  </div>
-                  <h3 className="font-bold text-[#1E3A8A] mb-2">{item.title}</h3>
-                  <p className="text-sm text-gray-700">{item.desc}</p>
+        {/* How to Order */}
+        <AnimatedSection className="max-w-5xl mx-auto mb-16">
+          <h2 className="text-3xl font-bold font-playfair text-gyro-navy text-center mb-12">
+            How to Order
+          </h2>
+          <div className="grid md:grid-cols-4 gap-8">
+            {[
+              { step: "1", icon: "📋", title: "Choose Your Items", desc: "Browse our menu and select what you'd like" },
+              { step: "2", icon: "📞", title: "Contact Us", desc: "Call (647) 548-8740 or request a quote online" },
+              { step: "3", icon: "✅", title: "Confirm Details", desc: "We'll finalize your order and send an invoice" },
+              { step: "4", icon: "🚚", title: "We Deliver", desc: "Fresh food delivered to your location on time" },
+            ].map((item, i) => (
+              <div key={i} className="text-center">
+                <div className="w-16 h-16 bg-gyro-navy text-white rounded-full flex items-center justify-center font-bold text-2xl mx-auto mb-4">
+                  {item.step}
+                </div>
+                <div className="text-5xl mb-4">{item.icon}</div>
+                <h3 className="text-xl font-bold text-gyro-navy mb-2">{item.title}</h3>
+                <p className="text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </AnimatedSection>
+
+        {/* Popular Items */}
+        <AnimatedSection className="mb-16">
+          <h2 className="text-3xl font-bold font-playfair text-gyro-navy text-center mb-8">
+            Popular Items
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {[
+              {
+                name: "Classic Gyro",
+                price: "$15.99",
+                desc: "Beef & lamb with fresh veggies, tzatziki, and pita",
+                dietary: "Halal"
+              },
+              {
+                name: "Chicken Souvlaki Plate",
+                price: "$16.99",
+                desc: "Two skewers with rice, salad, and pita",
+                dietary: "Gluten-Free Available"
+              },
+              {
+                name: "Party Platter",
+                price: "$89.99",
+                desc: "Serves 6-8 people. Mixed gyro meat, salads, and pitas",
+                dietary: "Customizable"
+              },
+            ].map((item, i) => (
+              <GyroCard key={i}>
+                <h3 className="text-2xl font-bold font-playfair text-gyro-navy mb-2">
+                  {item.name}
+                </h3>
+                <div className="mb-3">
+                  <span className="text-3xl font-bold text-gyro-gold">{item.price}</span>
+                </div>
+                <p className="text-gray-600 mb-3">{item.desc}</p>
+                <p className="text-sm text-gyro-navy font-semibold italic">{item.dietary}</p>
+              </GyroCard>
+            ))}
+          </div>
+        </AnimatedSection>
+
+        {/* Delivery Areas */}
+        <AnimatedSection className="mb-16">
+          <div className="bg-gyro-cream rounded-2xl p-8 shadow-xl text-center max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold font-playfair text-gyro-navy mb-6">
+              We Deliver Across Toronto
+            </h2>
+            <p className="text-lg text-gray-600 mb-6">
+              Fast, reliable delivery to these areas and beyond
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {["Downtown Toronto", "North York", "Mississauga", "Markham", "Etobicoke", "Scarborough"].map((area, i) => (
+                <div
+                  key={i}
+                  className="bg-white px-6 py-3 rounded-full border-2 border-gyro-navy/20 font-semibold text-gyro-navy"
+                >
+                  {area}
                 </div>
               ))}
             </div>
+            <p className="text-sm text-gray-500 mt-6">
+              Delivery fees vary by location. Minimum order may apply for certain areas.
+            </p>
           </div>
+        </AnimatedSection>
 
-          {/* Quick Menu Preview */}
-          <div className="max-w-4xl mx-auto mt-16">
-            <h2 className="text-3xl font-bold text-[#1E3A8A] text-center mb-8">Popular Catering Options</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow">
-                <h3 className="font-bold text-xl text-[#1E3A8A] mb-2">Individual Boxes</h3>
-                <p className="text-2xl font-bold text-[#B8860B] mb-2">$15.99+</p>
-                <p className="text-gray-700 text-sm">Perfect for office lunches and meetings</p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow">
-                <h3 className="font-bold text-xl text-[#1E3A8A] mb-2">Party Platters</h3>
-                <p className="text-2xl font-bold text-[#B8860B] mb-2">$89.99+</p>
-                <p className="text-gray-700 text-sm">Ideal for small gatherings (6-8 people)</p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow">
-                <h3 className="font-bold text-xl text-[#1E3A8A] mb-2">Group Catering</h3>
-                <p className="text-2xl font-bold text-[#B8860B] mb-2">$18.99+/person</p>
-                <p className="text-gray-700 text-sm">Full service for large events (15+)</p>
-              </div>
+        {/* Contact Options */}
+        <AnimatedSection>
+          <div className="bg-gradient-to-br from-gyro-gold to-gyro-gold-hover rounded-2xl p-12 shadow-xl text-white text-center max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold font-playfair mb-6">
+              Ready to Order?
+            </h2>
+            <p className="text-xl mb-8">
+              Place your order now by phone or request a custom catering quote online
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <GyroButton href="tel:6475488740" variant="secondary" className="bg-white text-gyro-navy hover:bg-gray-100 border-0">
+                📞 Call (647) 548-8740
+              </GyroButton>
+              <GyroButton href="/quote" variant="ghost" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-gyro-gold">
+                Request Quote Online →
+              </GyroButton>
             </div>
-            <div className="text-center mt-8">
-              <Link href="/menu" className="inline-block bg-[#1E3A8A] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#2563EB] transition">
-                View Full Menu →
-              </Link>
+            <div className="mt-8 space-y-2 text-lg">
+              <p className="font-semibold">Business Hours:</p>
+              <p>Monday - Friday: 9 AM - 8 PM</p>
+              <p>Saturday - Sunday: 10 AM - 6 PM</p>
             </div>
           </div>
-        </div>
-      </section>
+        </AnimatedSection>
+      </div>
 
-      <footer className="bg-[#1E3A8A] text-white py-12">
-        <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2026 Gyro City. All rights reserved.</p>
-        </div>
-      </footer>
+      <SharedFooter />
     </main>
   )
 }

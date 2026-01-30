@@ -1,198 +1,256 @@
-import Image from 'next/image'
-import Link from 'next/link'
+'use client'
 
-export const metadata = {
-  title: 'Event Catering Toronto | Greek Food for Parties & Celebrations | Gyro City',
-  description: 'Event catering in Toronto with authentic Greek cuisine. Perfect for weddings, birthdays, anniversaries, and special celebrations. Custom menus available.',
-}
+import { SharedNav } from '@/components/shared-nav'
+import { SharedFooter } from '@/components/shared-footer'
+import { AnimatedSection } from '@/components/ui/animated-section'
+import { GyroButton } from '@/components/ui/gyro-button'
+import { GyroCard } from '@/components/ui/gyro-card'
+import { motion } from 'framer-motion'
 
 export default function EventCateringPage() {
   return (
-    <main className="min-h-screen bg-white">
-      <nav className="sticky top-0 z-50 bg-[#1E3A8A] text-white shadow-lg">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <Image src="/gyro-city-logo.png" alt="Gyro City" width={50} height={50} className="rounded-full" />
-            <span className="text-2xl font-bold">GYRO CITY</span>
-          </Link>
-          <div className="hidden md:flex gap-6">
-            <Link href="/menu" className="hover:text-[#B8860B] transition">Menu</Link>
-            <Link href="/catering" className="text-[#B8860B] font-semibold">Catering</Link>
-            <Link href="/about" className="hover:text-[#B8860B] transition">About</Link>
-            <Link href="/contact" className="hover:text-[#B8860B] transition">Contact</Link>
-          </div>
-          <Link href="/quote" className="bg-[#B8860B] text-white px-6 py-2 rounded-lg hover:bg-[#9A7209] transition font-semibold">
-            Get Quote
-          </Link>
-        </div>
-      </nav>
+    <main className="min-h-screen bg-gray-50">
+      <SharedNav />
 
-      <section className="bg-gradient-to-r from-[#1E3A8A] to-[#2563EB] text-white py-20">
+      {/* Hero Section */}
+      <AnimatedSection className="bg-gradient-to-br from-gyro-navy via-blue-900 to-gyro-navy text-white py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6">Event Catering Toronto</h1>
-          <p className="text-xl max-w-2xl mx-auto">
-            Make your celebration unforgettable with authentic Greek catering. From intimate gatherings to grand celebrations, we bring the flavors of Greece to your special day.
+          <h1 className="text-5xl md:text-6xl font-bold font-playfair mb-6">
+            Event Catering
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
+            Make your celebration unforgettable with authentic Greek cuisine
           </p>
         </div>
-      </section>
+      </AnimatedSection>
 
-      <section className="py-16">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <p className="text-lg text-gray-700 mb-12">
-            Whether you're celebrating a milestone birthday, hosting a family reunion, or planning a community event, <strong className="text-[#1E3A8A]">Gyro City</strong> delivers authentic Greek catering that makes your event special. Our fresh Mediterranean cuisine, professional service, and flexible packages ensure your guests remember your celebration for all the right reasons.
-          </p>
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          {/* Left - Details */}
+          <AnimatedSection>
+            <div className="bg-white rounded-2xl p-8 shadow-xl">
+              <h2 className="text-3xl font-bold font-playfair text-gyro-navy mb-6">
+                Celebrations Worth Remembering
+              </h2>
+              <div className="space-y-4 text-lg text-gray-700">
+                <p>
+                  Whether it's a wedding, birthday party, anniversary, or family reunion, <strong>Gyro City</strong> brings the taste of Greece to your special occasion.
+                </p>
+                <p>
+                  Our event catering services are designed to impress your guests with authentic flavors, beautiful presentation, and seamless service that lets you focus on celebrating.
+                </p>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Weddings, anniversaries, and milestone celebrations</li>
+                  <li>Birthday parties and family reunions</li>
+                  <li>Holiday gatherings and seasonal events</li>
+                  <li>Customizable menus for any dietary need</li>
+                  <li>Full-service setup and coordination</li>
+                </ul>
+              </div>
+            </div>
+          </AnimatedSection>
 
-          <h2 className="text-3xl font-bold text-[#1E3A8A] mb-8 text-center">Events We Cater</h2>
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          {/* Right - Image Placeholder */}
+          <AnimatedSection delay={0.2}>
+            <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-gyro-gold/30 to-transparent"></div>
+              <div className="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold backdrop-blur-sm bg-gyro-navy/40">
+                [Wedding/Event Photo]
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+
+        {/* Event Types Section */}
+        <AnimatedSection className="mt-16">
+          <h2 className="text-3xl font-bold font-playfair text-gyro-navy text-center mb-8">
+            Events We Cater
+          </h2>
+          <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {[
-              { icon: '🎂', title: 'Birthday Parties', desc: 'Milestone birthdays and celebrations' },
-              { icon: '💒', title: 'Weddings', desc: 'Rehearsal dinners and receptions' },
-              { icon: '🎉', title: 'Anniversaries', desc: 'Romantic dinners and family gatherings' },
-              { icon: '🎓', title: 'Graduations', desc: 'Academic achievements and success' },
-              { icon: '👶', title: 'Baby Showers', desc: 'Welcoming new arrivals' },
-              { icon: '🏠', title: 'Housewarming', desc: 'New home celebrations' },
-              { icon: '⛪', title: 'Religious Events', desc: 'Baptisms, confirmations, bar/bat mitzvahs' },
-              { icon: '🎊', title: 'Holiday Parties', desc: 'Seasonal celebrations year-round' },
-              { icon: '👥', title: 'Reunions', desc: 'Family and friend gatherings' }
+              { icon: "💍", title: "Weddings", desc: "Elegant dining for your special day" },
+              { icon: "🎂", title: "Birthday Parties", desc: "Delicious celebrations for all ages" },
+              { icon: "🎊", title: "Anniversaries", desc: "Memorable meals for milestones" },
+              { icon: "👨‍👩‍👧‍👦", title: "Family Reunions", desc: "Bring everyone together with great food" },
             ].map((event, i) => (
-              <div key={i} className="bg-gray-50 p-6 rounded-lg text-center">
-                <div className="text-4xl mb-3">{event.icon}</div>
-                <h3 className="font-bold text-[#1E3A8A] mb-2">{event.title}</h3>
-                <p className="text-sm text-gray-700">{event.desc}</p>
-              </div>
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1, duration: 0.5 }}
+                className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow text-center"
+              >
+                <div className="text-5xl mb-3">{event.icon}</div>
+                <h3 className="text-xl font-bold text-gyro-navy mb-2">{event.title}</h3>
+                <p className="text-gray-600 text-sm">{event.desc}</p>
+              </motion.div>
             ))}
           </div>
+        </AnimatedSection>
 
-          <h2 className="text-3xl font-bold text-[#1E3A8A] mb-6">Event Catering Packages</h2>
-          
-          <div className="space-y-6 mb-12">
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex justify-between items-start mb-3">
-                <h3 className="text-2xl font-bold text-[#1E3A8A]">Intimate Gathering</h3>
-                <span className="text-2xl font-bold text-[#B8860B]">$18.99/person</span>
-              </div>
-              <p className="text-gray-700 mb-3">10-25 guests. Perfect for small celebrations and family events.</p>
-              <ul className="text-gray-700 space-y-1">
-                <li>✓ Choice of 2 proteins</li>
-                <li>✓ Greek salad & rice pilaf</li>
-                <li>✓ Fresh pita & tzatziki</li>
-                <li>✓ Disposable serving ware included</li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg border-2 border-[#B8860B]">
-              <div className="bg-[#B8860B] text-white px-3 py-1 rounded-full text-xs font-semibold inline-block mb-3">
-                POPULAR
-              </div>
-              <div className="flex justify-between items-start mb-3">
-                <h3 className="text-2xl font-bold text-[#1E3A8A]">Celebration Feast</h3>
-                <span className="text-2xl font-bold text-[#B8860B]">$21.99/person</span>
-              </div>
-              <p className="text-gray-700 mb-3">25-75 guests. Our most popular event package.</p>
-              <ul className="text-gray-700 space-y-1">
-                <li>✓ 3 protein options (gyro, chicken, vegetarian)</li>
-                <li>✓ Mezze appetizer platter</li>
-                <li>✓ Greek salad & roasted vegetables</li>
-                <li>✓ Rice pilaf & roasted potatoes</li>
-                <li>✓ Pita, tzatziki & hummus</li>
-                <li>✓ Dessert (baklava or cookies)</li>
-                <li>✓ Full setup & serving utensils</li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex justify-between items-start mb-3">
-                <h3 className="text-2xl font-bold text-[#1E3A8A]">Grand Celebration</h3>
-                <span className="text-2xl font-bold text-[#B8860B]">$24.99/person</span>
-              </div>
-              <p className="text-gray-700 mb-3">75+ guests. Premium catering for large events.</p>
-              <ul className="text-gray-700 space-y-1">
-                <li>✓ Full mixed grill (gyro, chicken, lamb souvlaki)</li>
-                <li>✓ Premium appetizer selection</li>
-                <li>✓ Greek salad, roasted vegetables, grilled peppers</li>
-                <li>✓ Multiple side options</li>
-                <li>✓ Artisan pita & premium sauces</li>
-                <li>✓ Dessert trio</li>
-                <li>✓ Beverages included</li>
-                <li>✓ Professional setup & breakdown</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="bg-[#1E3A8A] text-white p-8 rounded-lg mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-center">Why Choose Gyro City for Your Event?</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {[
-                { title: 'Authentic Greek Flavors', desc: 'Traditional recipes that wow your guests' },
-                { title: 'Fresh, Never Frozen', desc: 'Made fresh the day of your event' },
-                { title: 'Dietary Options', desc: 'Halal, vegetarian, vegan, gluten-free available' },
-                { title: 'Professional Service', desc: 'On-time delivery and polished presentation' },
-                { title: 'Flexible Portions', desc: 'Scale up or down based on your guest count' },
-                { title: 'Stress-Free Planning', desc: 'We handle the food so you can enjoy your event' }
-              ].map((item, i) => (
-                <div key={i}>
-                  <h3 className="font-bold text-lg mb-1 text-[#B8860B]">{item.title}</h3>
-                  <p className="text-sm">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <h2 className="text-3xl font-bold text-[#1E3A8A] mb-6">Add-Ons & Extras</h2>
-          <div className="grid md:grid-cols-2 gap-4 mb-12">
+        {/* Packages Section */}
+        <AnimatedSection className="mt-16">
+          <h2 className="text-3xl font-bold font-playfair text-gyro-navy text-center mb-8">
+            Popular Event Packages
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
-              { name: 'Spanakopita Tray', price: '$24.99', desc: 'Spinach & feta phyllo pastries (6 pieces)' },
-              { name: 'Baklava Dessert Tray', price: '$29.99', desc: 'Traditional honey-walnut dessert (12 pieces)' },
-              { name: 'Greek Roasted Potatoes', price: '$3.99/person', desc: 'Lemon-oregano roasted potatoes' },
-              { name: 'Extra Pita Bread', price: '$12.99/dozen', desc: 'Fresh, warm pita bread' },
-              { name: 'Premium Beverage Service', price: '$2.99/person', desc: 'Lemonade, iced tea, water' },
-              { name: 'Chafing Dishes (Rental)', price: '$25/each', desc: 'Keep food hot for buffet service' }
-            ].map((addon, i) => (
-              <div key={i} className="bg-gray-50 p-4 rounded-lg">
-                <div className="flex justify-between items-start mb-1">
-                  <h3 className="font-bold text-[#1E3A8A]">{addon.name}</h3>
-                  <span className="font-bold text-[#B8860B]">{addon.price}</span>
+              {
+                name: "Intimate Gathering",
+                price: "$18.99/person",
+                guests: "15-30 guests",
+                features: [
+                  "Choice of 2 proteins",
+                  "Greek salad and sides",
+                  "Warm pita and sauces",
+                  "Buffet-style setup",
+                  "Delivery and setup included"
+                ],
+                link: "/quote"
+              },
+              {
+                name: "Celebration Feast",
+                price: "$22.99/person",
+                guests: "30-75 guests",
+                features: [
+                  "Choice of 3 proteins",
+                  "Premium sides and salads",
+                  "Appetizer platter",
+                  "Dessert option available",
+                  "Professional presentation"
+                ],
+                popular: true,
+                link: "/quote"
+              },
+              {
+                name: "Grand Event",
+                price: "$29.99/person",
+                guests: "75+ guests",
+                features: [
+                  "Full Mediterranean menu",
+                  "Multiple protein options",
+                  "Premium appetizers",
+                  "Desserts included",
+                  "Dedicated event coordinator"
+                ],
+                link: "/quote"
+              }
+            ].map((pkg, i) => (
+              <GyroCard key={i} className={pkg.popular ? "ring-4 ring-gyro-gold relative" : ""}>
+                {pkg.popular && (
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gyro-gold text-white px-4 py-1 rounded-full text-sm font-bold">
+                    Most Popular
+                  </div>
+                )}
+                <h3 className="text-2xl font-bold font-playfair text-gyro-navy mb-2">
+                  {pkg.name}
+                </h3>
+                <p className="text-sm text-gray-600 mb-3">{pkg.guests}</p>
+                <div className="mb-4">
+                  <span className="text-3xl font-bold text-gyro-gold">{pkg.price}</span>
                 </div>
-                <p className="text-sm text-gray-700">{addon.desc}</p>
-              </div>
+                <ul className="space-y-3 mb-6">
+                  {pkg.features.map((feature, j) => (
+                    <li key={j} className="flex items-start gap-2 text-gray-700">
+                      <span className="text-gyro-gold mt-1">✓</span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <GyroButton href={pkg.link} variant={pkg.popular ? "primary" : "secondary"} className="w-full">
+                  Request Quote →
+                </GyroButton>
+              </GyroCard>
             ))}
           </div>
+        </AnimatedSection>
 
-          <div className="bg-[#B8860B] text-white p-6 rounded-lg">
-            <h3 className="text-2xl font-bold mb-3">Custom Event Planning</h3>
-            <p className="mb-4">Have specific requirements? We create custom menus tailored to your event theme, dietary needs, and budget. Contact us to discuss your vision.</p>
-            <ul className="space-y-1">
-              <li>✓ Personalized menu design</li>
-              <li>✓ Theme-specific presentation</li>
-              <li>✓ Dietary accommodation planning</li>
-              <li>✓ Budget-conscious options</li>
-            </ul>
+        {/* Why Choose Us Section */}
+        <AnimatedSection className="mt-16 bg-gyro-cream rounded-2xl p-12">
+          <h2 className="text-3xl font-bold font-playfair text-gyro-navy text-center mb-12">
+            Why Choose Gyro City for Your Event?
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {[
+              { icon: "🎨", title: "Custom Menus", desc: "Tailored to your preferences and dietary needs" },
+              { icon: "👨‍🍳", title: "Expert Chefs", desc: "Authentic Greek cuisine prepared fresh" },
+              { icon: "⏰", title: "Reliable Service", desc: "On-time delivery and professional setup" },
+              { icon: "💎", title: "Quality Ingredients", desc: "Fresh, never frozen, premium quality" },
+              { icon: "💰", title: "Great Value", desc: "Competitive pricing without compromising quality" },
+              { icon: "🤝", title: "Personal Touch", desc: "We treat your event like our own" },
+            ].map((benefit, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1, duration: 0.4 }}
+                className="text-center"
+              >
+                <div className="text-5xl mb-3">{benefit.icon}</div>
+                <h3 className="text-xl font-bold text-gyro-navy mb-2">{benefit.title}</h3>
+                <p className="text-gray-600">{benefit.desc}</p>
+              </motion.div>
+            ))}
           </div>
-        </div>
-      </section>
+        </AnimatedSection>
 
-      <section className="bg-gray-50 py-16 text-center">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-[#1E3A8A] mb-6">Ready to Plan Your Event?</h2>
-          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Get a free, custom quote for your celebration. We respond within 24 hours.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/quote" className="bg-[#B8860B] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#9A7209] transition">
-              Get Free Quote
-            </Link>
-            <a href="tel:6475488740" className="bg-[#1E3A8A] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#2563EB] transition">
-              Call (647) 548-8740
-            </a>
+        {/* Testimonials Section */}
+        <AnimatedSection className="mt-16">
+          <h2 className="text-3xl font-bold font-playfair text-gyro-navy text-center mb-8">
+            What Our Event Clients Say
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {[
+              {
+                text: "Gyro City catered our wedding reception and it was phenomenal! Every single guest complimented the food. Couldn't have asked for better.",
+                name: "Jennifer & Tom",
+                event: "Wedding, 120 guests"
+              },
+              {
+                text: "We hired Gyro City for my mom's 60th birthday. The food was delicious and the service was impeccable. Highly recommend!",
+                name: "Maria S.",
+                event: "Birthday Party, 45 guests"
+              },
+              {
+                text: "Amazing food, great presentation, and stress-free planning. Gyro City made our anniversary celebration perfect!",
+                name: "David R.",
+                event: "Anniversary Party, 30 guests"
+              }
+            ].map((testimonial, i) => (
+              <GyroCard key={i}>
+                <div className="text-gyro-gold mb-3">⭐⭐⭐⭐⭐</div>
+                <p className="text-gray-700 mb-4 italic">"{testimonial.text}"</p>
+                <p className="font-bold text-gyro-navy">{testimonial.name}</p>
+                <p className="text-sm text-gray-600">{testimonial.event}</p>
+              </GyroCard>
+            ))}
           </div>
-        </div>
-      </section>
+        </AnimatedSection>
 
-      <footer className="bg-[#1E3A8A] text-white py-12">
-        <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2026 Gyro City. All rights reserved.</p>
-        </div>
-      </footer>
+        {/* CTA Section */}
+        <AnimatedSection className="mt-16 py-20 bg-gradient-to-r from-gyro-gold to-gyro-gold-hover text-white rounded-2xl">
+          <div className="container mx-auto text-center px-4">
+            <h2 className="text-4xl md:text-5xl font-bold font-playfair mb-6">
+              Ready to Plan Your Event?
+            </h2>
+            <p className="text-xl mb-8 max-w-2xl mx-auto">
+              Let's create a memorable dining experience for your celebration
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <GyroButton href="/quote" variant="secondary" className="bg-white text-gyro-navy hover:bg-gray-100 border-0">
+                Get Free Quote →
+              </GyroButton>
+              <GyroButton href="tel:6475488740" variant="ghost" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-gyro-gold">
+                Call (647) 548-8740
+              </GyroButton>
+            </div>
+          </div>
+        </AnimatedSection>
+      </div>
+
+      <SharedFooter />
     </main>
   )
 }
