@@ -83,118 +83,6 @@ export default function CorporateCateringPage() {
         </div>
       </AnimatedSection>
 
-      {/* Why Choose Section */}
-      <AnimatedSection className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-12 text-center">
-            Why Toronto Corporations Trust Gyro City
-          </h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Flawless Execution */}
-            <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
-              <div className="text-4xl mb-4">🎯</div>
-              <h3 className="text-2xl font-bold mb-3">Flawless Execution</h3>
-              <p className="text-gray-700 mb-4">
-                Your corporate event runs smoothly with our meticulous planning and reliable execution. We handle every detail professionally.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>• Detailed planning consultations</li>
-                <li>• Site visits for large events</li>
-                <li>• Backup plans for every scenario</li>
-                <li>• Dedicated event coordinator</li>
-                <li>• Real-time communication during service</li>
-              </ul>
-            </div>
-
-            {/* Professional Presentation */}
-            <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
-              <div className="text-4xl mb-4">👔</div>
-              <h3 className="text-2xl font-bold mb-3">Professional Presentation</h3>
-              <p className="text-gray-700 mb-4">
-                First impressions matter. Our upscale presentation and attentive service reflect well on your organization.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>• Elegantly presented platters</li>
-                <li>• Premium serving ware options</li>
-                <li>• Uniformed delivery staff</li>
-                <li>• White-glove service available</li>
-                <li>• Discreet setup & breakdown</li>
-              </ul>
-            </div>
-
-            {/* Exceptional Cuisine */}
-            <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
-              <div className="text-4xl mb-4">🍽️</div>
-              <h3 className="text-2xl font-bold mb-3">Exceptional Cuisine</h3>
-              <p className="text-gray-700 mb-4">
-                Authentic Greek food that impresses even the most discerning palates. Fresh, flavorful, and memorable.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>• Premium imported ingredients</li>
-                <li>• Traditional Greek recipes</li>
-                <li>• Executive chef oversight</li>
-                <li>• Customizable menus</li>
-                <li>• Dietary accommodation expertise</li>
-              </ul>
-            </div>
-
-            {/* Flexible Solutions */}
-            <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
-              <div className="text-4xl mb-4">⚡</div>
-              <h3 className="text-2xl font-bold mb-3">Flexible Solutions</h3>
-              <p className="text-gray-700 mb-4">
-                From board meetings for 8 to conferences for 500+, we scale seamlessly to meet your corporate needs.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>• Small executive meetings (8-20)</li>
-                <li>• Mid-size events (20-100)</li>
-                <li>• Large conferences (100-500+)</li>
-                <li>• Multi-day events</li>
-                <li>• Multiple location coordination</li>
-              </ul>
-            </div>
-
-            {/* Corporate Account Management */}
-            <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
-              <div className="text-4xl mb-4">💼</div>
-              <h3 className="text-2xl font-bold mb-3">Corporate Account Management</h3>
-              <p className="text-gray-700 mb-4">
-                Streamline your corporate catering with dedicated account management and simplified billing.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>• Dedicated account manager</li>
-                <li>• Net 30 payment terms</li>
-                <li>• Consolidated monthly billing</li>
-                <li>• Event planning assistance</li>
-                <li>• Priority scheduling</li>
-              </ul>
-              <Link href="/quote" className="inline-block mt-4 text-[#0066FF] font-semibold hover:underline">
-                Setup Corporate Account →
-              </Link>
-            </div>
-
-            {/* Proven Track Record */}
-            <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
-              <div className="text-4xl mb-4">🌟</div>
-              <h3 className="text-2xl font-bold mb-3">Proven Track Record</h3>
-              <p className="text-gray-700 mb-4">
-                200+ successful corporate events in downtown Toronto. Trusted by the city's most prestigious organizations.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>• Annual general meetings</li>
-                <li>• Board dinners</li>
-                <li>• Client presentations</li>
-                <li>• Product launches</li>
-                <li>• Training seminars</li>
-                <li>• Conference catering</li>
-                <li>• Holiday parties</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </AnimatedSection>
-
       {/* Corporate Event Types */}
       <AnimatedSection className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -382,6 +270,118 @@ export default function CorporateCateringPage() {
               <Link href="/quote" className="inline-block w-full text-center bg-gray-100 text-[#0066FF] px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition-all">
                 Get Quote
               </Link>
+            </div>
+          </div>
+        </div>
+      </AnimatedSection>
+
+      {/* Why Choose Section */}
+      <AnimatedSection className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-12 text-center">
+            Why Toronto Corporations Trust Gyro City
+          </h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Flawless Execution */}
+            <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
+              <div className="text-4xl mb-4">🎯</div>
+              <h3 className="text-2xl font-bold mb-3">Flawless Execution</h3>
+              <p className="text-gray-700 mb-4">
+                Your corporate event runs smoothly with our meticulous planning and reliable execution. We handle every detail professionally.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>• Detailed planning consultations</li>
+                <li>• Site visits for large events</li>
+                <li>• Backup plans for every scenario</li>
+                <li>• Dedicated event coordinator</li>
+                <li>• Real-time communication during service</li>
+              </ul>
+            </div>
+
+            {/* Professional Presentation */}
+            <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
+              <div className="text-4xl mb-4">👔</div>
+              <h3 className="text-2xl font-bold mb-3">Professional Presentation</h3>
+              <p className="text-gray-700 mb-4">
+                First impressions matter. Our upscale presentation and attentive service reflect well on your organization.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>• Elegantly presented platters</li>
+                <li>• Premium serving ware options</li>
+                <li>• Uniformed delivery staff</li>
+                <li>• White-glove service available</li>
+                <li>• Discreet setup & breakdown</li>
+              </ul>
+            </div>
+
+            {/* Exceptional Cuisine */}
+            <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
+              <div className="text-4xl mb-4">🍽️</div>
+              <h3 className="text-2xl font-bold mb-3">Exceptional Cuisine</h3>
+              <p className="text-gray-700 mb-4">
+                Authentic Greek food that impresses even the most discerning palates. Fresh, flavorful, and memorable.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>• Premium imported ingredients</li>
+                <li>• Traditional Greek recipes</li>
+                <li>• Executive chef oversight</li>
+                <li>• Customizable menus</li>
+                <li>• Dietary accommodation expertise</li>
+              </ul>
+            </div>
+
+            {/* Flexible Solutions */}
+            <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
+              <div className="text-4xl mb-4">⚡</div>
+              <h3 className="text-2xl font-bold mb-3">Flexible Solutions</h3>
+              <p className="text-gray-700 mb-4">
+                From board meetings for 8 to conferences for 500+, we scale seamlessly to meet your corporate needs.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>• Small executive meetings (8-20)</li>
+                <li>• Mid-size events (20-100)</li>
+                <li>• Large conferences (100-500+)</li>
+                <li>• Multi-day events</li>
+                <li>• Multiple location coordination</li>
+              </ul>
+            </div>
+
+            {/* Corporate Account Management */}
+            <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
+              <div className="text-4xl mb-4">💼</div>
+              <h3 className="text-2xl font-bold mb-3">Corporate Account Management</h3>
+              <p className="text-gray-700 mb-4">
+                Streamline your corporate catering with dedicated account management and simplified billing.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>• Dedicated account manager</li>
+                <li>• Net 30 payment terms</li>
+                <li>• Consolidated monthly billing</li>
+                <li>• Event planning assistance</li>
+                <li>• Priority scheduling</li>
+              </ul>
+              <Link href="/quote" className="inline-block mt-4 text-[#0066FF] font-semibold hover:underline">
+                Setup Corporate Account →
+              </Link>
+            </div>
+
+            {/* Proven Track Record */}
+            <div className="bg-white border-2 border-[#0066FF] rounded-xl p-6">
+              <div className="text-4xl mb-4">🌟</div>
+              <h3 className="text-2xl font-bold mb-3">Proven Track Record</h3>
+              <p className="text-gray-700 mb-4">
+                200+ successful corporate events in downtown Toronto. Trusted by the city's most prestigious organizations.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>• Annual general meetings</li>
+                <li>• Board dinners</li>
+                <li>• Client presentations</li>
+                <li>• Product launches</li>
+                <li>• Training seminars</li>
+                <li>• Conference catering</li>
+                <li>• Holiday parties</li>
+              </ul>
             </div>
           </div>
         </div>
