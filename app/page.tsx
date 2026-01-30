@@ -100,10 +100,17 @@ export default function Home() {
       {/* Social Proof Section */}
       <AnimatedSection className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold text-black mb-2 uppercase tracking-wide">
+          <div className="mb-16 text-center">
+            <h2 className="text-4xl md:text-5xl font-bold font-playfair italic text-black mb-4">
               Loved by Toronto Businesses
             </h2>
+            <div className="flex justify-center gap-1 text-3xl text-yellow-400">
+              <span>⭐</span>
+              <span>⭐</span>
+              <span>⭐</span>
+              <span>⭐</span>
+              <span>⭐</span>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
