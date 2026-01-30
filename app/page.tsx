@@ -26,11 +26,11 @@ export default function Home() {
         <div className="container mx-auto px-4 py-5 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
             <Image 
-              src="/gyro-city-logo-white.jpg" 
+              src="/gyro-city-logo-black.jpg" 
               alt="Gyro City" 
-              width={200} 
-              height={60} 
-              className="h-12 w-auto"
+              width={300} 
+              height={90} 
+              className="h-14 w-auto bg-white px-3 py-1 rounded"
               priority
             />
           </Link>
@@ -444,11 +444,11 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <Image 
-                src="/gyro-city-logo-white.jpg" 
+                src="/gyro-city-logo-black.jpg" 
                 alt="Gyro City" 
-                width={150} 
-                height={45} 
-                className="h-10 w-auto mb-4"
+                width={200} 
+                height={60} 
+                className="h-12 w-auto mb-4 bg-white px-2 py-1 rounded"
               />
               <p className="text-gray-400">Toronto's Authentic Greek Catering</p>
             </div>
