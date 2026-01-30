@@ -11,7 +11,7 @@ export function SharedNav() {
   const isActive = (path: string) => pathname === path
 
   return (
-    <nav className="sticky top-0 z-50 bg-gyro-navy/95 backdrop-blur-lg text-white shadow-lg">
+    <nav className="sticky top-0 z-50 bg-[#1E3A8A]/95 backdrop-blur-lg text-white shadow-lg">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           <Image 
@@ -21,38 +21,38 @@ export function SharedNav() {
             height={50} 
             className="rounded-full group-hover:scale-110 transition-transform" 
           />
-          <span className="text-2xl font-bold font-playfair">GYRO CITY</span>
+          <span className="text-2xl font-bold font-playfair text-white">GYRO CITY</span>
         </Link>
         
-        <div className="hidden md:flex gap-8 items-center">
+        <div className="hidden md:flex gap-8 items-center text-white">
           <Link 
             href="/menu" 
-            className={`hover:text-gyro-gold transition-colors duration-200 font-semibold ${
-              isActive('/menu') ? 'text-gyro-gold' : ''
+            className={`hover:text-[#B8860B] transition-colors duration-200 font-semibold ${
+              isActive('/menu') ? 'text-[#B8860B]' : 'text-white'
             }`}
           >
             Menu
           </Link>
           <Link 
             href="/catering" 
-            className={`hover:text-gyro-gold transition-colors duration-200 font-semibold ${
-              isActive('/catering') || pathname?.startsWith('/catering/') ? 'text-gyro-gold' : ''
+            className={`hover:text-[#B8860B] transition-colors duration-200 font-semibold ${
+              isActive('/catering') || pathname?.startsWith('/catering/') ? 'text-[#B8860B]' : 'text-white'
             }`}
           >
             Catering
           </Link>
           <Link 
             href="/about" 
-            className={`hover:text-gyro-gold transition-colors duration-200 font-semibold ${
-              isActive('/about') ? 'text-gyro-gold' : ''
+            className={`hover:text-[#B8860B] transition-colors duration-200 font-semibold ${
+              isActive('/about') ? 'text-[#B8860B]' : 'text-white'
             }`}
           >
             About
           </Link>
           <Link 
             href="/contact" 
-            className={`hover:text-gyro-gold transition-colors duration-200 font-semibold ${
-              isActive('/contact') ? 'text-gyro-gold' : ''
+            className={`hover:text-[#B8860B] transition-colors duration-200 font-semibold ${
+              isActive('/contact') ? 'text-[#B8860B]' : 'text-white'
             }`}
           >
             Contact
