@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { AnimatedSection } from '@/components/ui/animated-section'
 
@@ -22,8 +23,15 @@ export default function OfficeCateringPage() {
       <nav className="sticky top-0 z-50 bg-[#0066FF] backdrop-blur-lg text-white shadow-lg">
         <div className="container mx-auto px-4 py-5 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded border-2 border-white">
-              <span className="text-xl font-bold text-white">LOGO</span>
+            <div className="bg-white px-4 py-2 rounded-lg shadow-sm">
+              <Image 
+                src="/gyro-city-logo-black.jpg" 
+                alt="Gyro City - Authentic Greek Catering" 
+                width={300} 
+                height={90} 
+                className="h-12 w-auto group-hover:opacity-80 transition-opacity" 
+                priority
+              />
             </div>
           </Link>
           <div className="hidden md:flex gap-10 items-center">

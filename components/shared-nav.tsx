@@ -48,28 +48,12 @@ export function SharedNav() {
             Home
           </Link>
           <Link 
-            href="/about" 
-            className={`hover:text-white/80 transition-colors duration-200 font-medium ${
-              isActive('/about') ? 'underline underline-offset-4' : 'text-white'
-            }`}
-          >
-            About Us
-          </Link>
-          <Link 
-            href="/catering/corporate" 
-            className={`hover:text-white/80 transition-colors duration-200 font-medium ${
-              pathname?.includes('/catering') ? 'underline underline-offset-4' : 'text-white'
-            }`}
-          >
-            Corporate Catering
-          </Link>
-          <Link 
             href="/menu" 
             className={`hover:text-white/80 transition-colors duration-200 font-medium ${
               isActive('/menu') ? 'underline underline-offset-4' : 'text-white'
             }`}
           >
-            Our Menu
+            Menu
           </Link>
           <Link 
             href="/catering/office" 
@@ -78,6 +62,30 @@ export function SharedNav() {
             }`}
           >
             Office Catering
+          </Link>
+          <Link 
+            href="/catering/corporate" 
+            className={`hover:text-white/80 transition-colors duration-200 font-medium ${
+              isActive('/catering/corporate') ? 'underline underline-offset-4' : 'text-white'
+            }`}
+          >
+            Corporate
+          </Link>
+          <Link 
+            href="/catering/events" 
+            className={`hover:text-white/80 transition-colors duration-200 font-medium ${
+              isActive('/catering/events') ? 'underline underline-offset-4' : 'text-white'
+            }`}
+          >
+            Events
+          </Link>
+          <Link 
+            href="/about" 
+            className={`hover:text-white/80 transition-colors duration-200 font-medium ${
+              isActive('/about') ? 'underline underline-offset-4' : 'text-white'
+            }`}
+          >
+            About
           </Link>
           <Link 
             href="/quote" 
