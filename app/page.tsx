@@ -25,9 +25,14 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-[#0066FF] backdrop-blur-lg text-white shadow-lg">
         <div className="container mx-auto px-4 py-5 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded border-2 border-white">
-              <span className="text-xl font-bold text-white">LOGO</span>
-            </div>
+            <Image 
+              src="/gyro-city-logo-white.jpg" 
+              alt="Gyro City" 
+              width={200} 
+              height={60} 
+              className="h-12 w-auto"
+              priority
+            />
           </Link>
           <div className="hidden md:flex gap-10 items-center">
             <Link href="/" className="hover:text-white/80 transition-colors duration-200 font-medium underline underline-offset-4">Home</Link>
@@ -437,6 +442,16 @@ export default function Home() {
       <footer className="bg-gyro-navy text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <Image 
+                src="/gyro-city-logo-white.jpg" 
+                alt="Gyro City" 
+                width={150} 
+                height={45} 
+                className="h-10 w-auto mb-4"
+              />
+              <p className="text-gray-400 text-sm">Toronto's Authentic Greek Catering</p>
+            </div>
             <div>
               <h3 className="font-bold text-xl mb-4 font-playfair">Quick Links</h3>
               <ul className="space-y-2">

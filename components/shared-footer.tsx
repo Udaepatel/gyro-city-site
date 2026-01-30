@@ -1,10 +1,21 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function SharedFooter() {
   return (
     <footer className="bg-gyro-navy text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <Image 
+              src="/gyro-city-logo-white.jpg" 
+              alt="Gyro City" 
+              width={150} 
+              height={45} 
+              className="h-10 w-auto mb-4"
+            />
+            <p className="text-gray-400 text-sm">Toronto's Authentic Greek Catering</p>
+          </div>
           <div>
             <h3 className="font-bold text-xl mb-4 font-playfair">Quick Links</h3>
             <ul className="space-y-2">

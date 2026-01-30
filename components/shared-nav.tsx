@@ -27,13 +27,13 @@ export function SharedNav() {
       <div className="container mx-auto px-4 py-5 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           <Image 
-            src="/gyro-city-logo.png" 
-            alt="Gyro City" 
-            width={50} 
-            height={50} 
-            className="rounded-full group-hover:scale-110 transition-transform" 
+            src="/gyro-city-logo-white.jpg" 
+            alt="Gyro City - Authentic Greek Catering" 
+            width={200} 
+            height={60} 
+            className="h-12 w-auto group-hover:opacity-90 transition-opacity" 
+            priority
           />
-          <span className="text-2xl font-bold font-playfair text-white">GYRO CITY</span>
         </Link>
         
         <div className="hidden md:flex gap-10 items-center text-white">
