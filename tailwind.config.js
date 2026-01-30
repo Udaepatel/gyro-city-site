@@ -19,6 +19,21 @@ module.exports = {
     },
     extend: {
       colors: {
+        // Gyro City brand colors (oklch for perceptual uniformity)
+        'gyro-navy': 'oklch(0.45 0.15 240)',
+        'gyro-navy-hover': 'oklch(0.55 0.15 240)',
+        'gyro-gold': 'oklch(0.65 0.12 80)',
+        'gyro-gold-hover': 'oklch(0.75 0.12 80)',
+        'gyro-terracotta': 'oklch(0.55 0.18 25)',
+        'gyro-cream': 'oklch(0.97 0.01 70)',
+        'gyro-surface': 'oklch(0.98 0 0)',
+        'gyro-border': 'oklch(0.90 0 0)',
+        'gyro-text': 'oklch(0.20 0 0)',
+        'gyro-text-secondary': 'oklch(0.45 0 0)',
+        'gyro-text-light': 'oklch(0.95 0 0)',
+        'gyro-bg-dark': 'oklch(0.20 0.02 240)',
+        
+        // Original theme colors (for compatibility)
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -59,8 +74,10 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
-        heading: ["var(--font-heading)", ...fontFamily.sans],
+        sans: ["var(--font-inter)", "var(--font-sans)", ...fontFamily.sans],
+        heading: ["var(--font-playfair)", "var(--font-heading)", ...fontFamily.serif],
+        playfair: ["var(--font-playfair)", ...fontFamily.serif],
+        inter: ["var(--font-inter)", ...fontFamily.sans],
       },
       keyframes: {
         "accordion-down": {
