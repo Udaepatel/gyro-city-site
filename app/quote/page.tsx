@@ -83,7 +83,7 @@ export default function QuotePage() {
     <main className="min-h-screen bg-white">
       {/* Moving Text Marquee */}
       <div className="bg-white text-black py-3 overflow-hidden border-b border-gray-200">
-        <div className="whitespace-nowrap animate-marquee-slow text-lg font-medium">
+        <div className="whitespace-nowrap animate-marquee-slow text-base md:text-lg font-medium tracking-wide">
           Get Your Free Quote • Fast Response Within 24 Hours • No Hidden Fees • Transparent Pricing • Custom Menus
           &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
           Get Your Free Quote • Fast Response Within 24 Hours • No Hidden Fees • Transparent Pricing • Custom Menus
@@ -136,7 +136,7 @@ export default function QuotePage() {
       <section className="bg-[#0066FF] text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-playfair leading-tight mb-6">
               Get Your Free Catering Quote
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90">
@@ -178,7 +178,7 @@ export default function QuotePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl border-4 border-[#0066FF]">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-8 text-center">
                 Tell Us About Your Event
               </h2>
               <p className="text-gray-600 text-center mb-10 text-lg">
@@ -612,7 +612,7 @@ export default function QuotePage() {
       {/* Why Quote With Us Section */}
       <AnimatedSection className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold font-playfair text-center mb-12">
             Why Get Your Quote from Gyro City?
           </h2>
           
@@ -659,7 +659,7 @@ export default function QuotePage() {
       {/* What's Included Section */}
       <AnimatedSection className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold font-playfair text-center mb-12">
             What's Included in Your Quote?
           </h2>
           
@@ -737,7 +737,7 @@ export default function QuotePage() {
       {/* Popular Package Previews */}
       <AnimatedSection className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold font-playfair text-center mb-4">
             Popular Catering Packages to Get You Started
           </h2>
           <p className="text-gray-600 text-center mb-12 text-lg">
@@ -815,7 +815,7 @@ export default function QuotePage() {
       {/* Testimonials Section */}
       <AnimatedSection className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold font-playfair text-center mb-12">
             What Our Customers Say About Our Service
           </h2>
           
@@ -856,7 +856,7 @@ export default function QuotePage() {
       {/* FAQ Section */}
       <AnimatedSection className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold font-playfair text-center mb-12">
             Quote & Booking FAQ
           </h2>
           
@@ -909,7 +909,7 @@ export default function QuotePage() {
       {/* Urgent Needs Section */}
       <AnimatedSection className="py-16 bg-[#0066FF] text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-6 italic">
             Need Catering Urgently?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
