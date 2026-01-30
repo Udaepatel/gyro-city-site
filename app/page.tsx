@@ -80,7 +80,7 @@ export default function Home() {
             <div className="relative w-full h-full flex items-center justify-center">
               <Image 
                 src="/catering-trays.jpg" 
-                alt="Greek catering trays with rice, chicken, and falafel" 
+                alt="Professional Greek catering trays with rice pilaf, grilled chicken shawarma, and golden falafel - Toronto catering delivery" 
                 fill
                 className="object-contain"
                 priority
@@ -307,6 +307,71 @@ export default function Home() {
                 {area}
               </motion.div>
             ))}
+          </div>
+        </div>
+      </AnimatedSection>
+
+      {/* FAQ Section */}
+      <AnimatedSection className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-4xl md:text-5xl font-bold font-playfair text-black text-center mb-12">
+            Frequently Asked Questions
+          </h2>
+          
+          <div className="space-y-8">
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-2xl font-bold text-black mb-3">
+                What areas do you serve in Toronto?
+              </h3>
+              <p className="text-lg text-gray-700">
+                We deliver Greek catering across Toronto including Downtown, North York, Mississauga, Markham, Etobicoke, and Scarborough. Same-day delivery available for downtown Toronto orders placed before 11 AM.
+              </p>
+            </div>
+
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-2xl font-bold text-black mb-3">
+                Do you offer same-day catering?
+              </h3>
+              <p className="text-lg text-gray-700">
+                Yes! Call (647) 548-8740 before 11 AM for same-day delivery in downtown Toronto. For other areas, we recommend ordering 24-48 hours in advance to ensure availability.
+              </p>
+            </div>
+
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-2xl font-bold text-black mb-3">
+                What's your minimum order for catering?
+              </h3>
+              <p className="text-lg text-gray-700">
+                Our minimum is 10 people for individual lunch boxes or $100 for platter orders. No minimum for downtown Toronto office deliveries during business hours.
+              </p>
+            </div>
+
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-2xl font-bold text-black mb-3">
+                Is your food halal?
+              </h3>
+              <p className="text-lg text-gray-700">
+                Yes! All our meat options are 100% halal certified. We also offer vegetarian, vegan, and gluten-free options to accommodate all dietary preferences.
+              </p>
+            </div>
+
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-2xl font-bold text-black mb-3">
+                Do you have vegetarian and vegan options?
+              </h3>
+              <p className="text-lg text-gray-700">
+                Absolutely! We offer falafel wraps, veggie gyros, hummus platters, fresh Greek salads, and more. All our vegetarian and vegan options are clearly marked on our menu.
+              </p>
+            </div>
+
+            <div className="pb-6">
+              <h3 className="text-2xl font-bold text-black mb-3">
+                How far in advance should I order?
+              </h3>
+              <p className="text-lg text-gray-700">
+                For best availability, we recommend ordering 24-48 hours in advance. Same-day orders are available for downtown Toronto (call before 11 AM). For large events (50+ people), please order at least 72 hours in advance.
+              </p>
+            </div>
           </div>
         </div>
       </AnimatedSection>
