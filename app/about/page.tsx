@@ -508,42 +508,6 @@ export default function AboutPage() {
         </div>
       </AnimatedSection>
 
-      {/* Community Involvement */}
-      <AnimatedSection className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-8 text-center">
-            Giving Back to Toronto
-          </h2>
-          
-          <p className="text-xl text-gray-700 text-center mb-12 max-w-3xl mx-auto">
-            We're grateful for Toronto's support over the past decade. That's why we:
-          </p>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {[
-              { icon: "🎓", text: "Support local schools and sports teams" },
-              { icon: "🏥", text: "Provide catering for community health events" },
-              { icon: "🎉", text: "Sponsor cultural festivals" },
-              { icon: "💼", text: "Hire and train locally" },
-              { icon: "🌱", text: "Source from local suppliers when possible" },
-              { icon: "❤️", text: "Donate catering to charitable causes" },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1, duration: 0.4 }}
-                className="bg-white border-4 border-[#0066FF] rounded-xl p-6 flex items-start gap-4"
-              >
-                <div className="text-4xl">{item.icon}</div>
-                <p className="text-gray-700 flex-1 pt-2">{item.text}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </AnimatedSection>
-
       {/* Testimonials */}
       <AnimatedSection className="py-20 bg-white">
         <div className="container mx-auto px-4">
