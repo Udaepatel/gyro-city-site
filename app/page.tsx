@@ -10,6 +10,17 @@ import { AnimatedSection } from '@/components/ui/animated-section'
 export default function Home() {
   return (
     <main className="min-h-screen">
+      {/* Moving Text Marquee */}
+      <div className="bg-white text-black py-3 overflow-hidden border-b border-gray-200">
+        <div className="whitespace-nowrap animate-marquee-slow text-lg font-medium">
+          Office Catering • Same Day Catering • Lunch Box Catering • Buffet Style Trays • Sandwich Platter
+          &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+          Office Catering • Same Day Catering • Lunch Box Catering • Buffet Style Trays • Sandwich Platter
+          &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+          Office Catering • Same Day Catering • Lunch Box Catering • Buffet Style Trays • Sandwich Platter
+        </div>
+      </div>
+
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-[#0066FF] backdrop-blur-lg text-white shadow-lg">
         <div className="container mx-auto px-4 py-5 flex items-center justify-between">

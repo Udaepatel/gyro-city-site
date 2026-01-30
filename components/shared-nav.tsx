@@ -11,7 +11,19 @@ export function SharedNav() {
   const isActive = (path: string) => pathname === path
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#0066FF] backdrop-blur-lg text-white shadow-lg">
+    <>
+      {/* Moving Text Marquee */}
+      <div className="bg-white text-black py-3 overflow-hidden border-b border-gray-200">
+        <div className="whitespace-nowrap animate-marquee-slow text-lg font-medium">
+          Office Catering • Same Day Catering • Lunch Box Catering • Buffet Style Trays • Sandwich Platter
+          &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+          Office Catering • Same Day Catering • Lunch Box Catering • Buffet Style Trays • Sandwich Platter
+          &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+          Office Catering • Same Day Catering • Lunch Box Catering • Buffet Style Trays • Sandwich Platter
+        </div>
+      </div>
+
+      <nav className="sticky top-0 z-50 bg-[#0066FF] backdrop-blur-lg text-white shadow-lg">
       <div className="container mx-auto px-4 py-5 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           <Image 
@@ -74,5 +86,6 @@ export function SharedNav() {
         </div>
       </div>
     </nav>
+    </>
   )
 }
