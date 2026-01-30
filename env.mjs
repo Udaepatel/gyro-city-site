@@ -3,24 +3,22 @@ import { z } from "zod"
 
 export const env = createEnv({
   server: {
-    // This is optional because it's only used in development.
-    // See https://next-auth.js.org/deployment.
     NEXTAUTH_URL: z.string().url().optional(),
-    NEXTAUTH_SECRET: z.string().min(1),
-    GITHUB_CLIENT_ID: z.string().min(1),
-    GITHUB_CLIENT_SECRET: z.string().min(1),
-    GITHUB_ACCESS_TOKEN: z.string().min(1),
-    DATABASE_URL: z.string().min(1),
-    SMTP_FROM: z.string().min(1),
-    POSTMARK_API_TOKEN: z.string().min(1),
-    POSTMARK_SIGN_IN_TEMPLATE: z.string().min(1),
-    POSTMARK_ACTIVATION_TEMPLATE: z.string().min(1),
-    STRIPE_API_KEY: z.string().min(1),
-    STRIPE_WEBHOOK_SECRET: z.string().min(1),
-    STRIPE_PRO_MONTHLY_PLAN_ID: z.string().min(1),
+    NEXTAUTH_SECRET: z.string().optional(),
+    GITHUB_CLIENT_ID: z.string().optional(),
+    GITHUB_CLIENT_SECRET: z.string().optional(),
+    GITHUB_ACCESS_TOKEN: z.string().optional(),
+    DATABASE_URL: z.string().optional(),
+    SMTP_FROM: z.string().optional(),
+    POSTMARK_API_TOKEN: z.string().optional(),
+    POSTMARK_SIGN_IN_TEMPLATE: z.string().optional(),
+    POSTMARK_ACTIVATION_TEMPLATE: z.string().optional(),
+    STRIPE_API_KEY: z.string().optional(),
+    STRIPE_WEBHOOK_SECRET: z.string().optional(),
+    STRIPE_PRO_MONTHLY_PLAN_ID: z.string().optional(),
   },
   client: {
-    NEXT_PUBLIC_APP_URL: z.string().min(1),
+    NEXT_PUBLIC_APP_URL: z.string().optional(),
   },
   runtimeEnv: {
     NEXTAUTH_URL: process.env.NEXTAUTH_URL,
