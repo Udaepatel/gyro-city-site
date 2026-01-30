@@ -9,7 +9,18 @@ export const metadata = {
 export default function TermsPage() {
   return (
     <main className="min-h-screen bg-white">
-      <nav className="sticky top-0 z-50 bg-[#1E3A8A] text-white shadow-lg">
+      {/* Moving Text Marquee */}
+      <div className="bg-white text-black py-3 overflow-hidden border-b border-gray-200">
+        <div className="whitespace-nowrap animate-marquee-slow text-base md:text-lg font-medium tracking-wide">
+          Terms of Service • Catering Policies • Ordering Guidelines • Cancellation Policy • Payment Terms
+          &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+          Terms of Service • Catering Policies • Ordering Guidelines • Cancellation Policy • Payment Terms
+          &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+          Terms of Service • Catering Policies • Ordering Guidelines • Cancellation Policy • Payment Terms
+        </div>
+      </div>
+      
+      <nav className="sticky top-0 z-50 bg-[#0066FF] text-white shadow-lg">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <Image src="/gyro-city-logo.png" alt="Gyro City" width={50} height={50} className="rounded-full" />
@@ -21,12 +32,12 @@ export default function TermsPage() {
 
       <section className="py-16">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h1 className="text-4xl font-bold text-[#1E3A8A] mb-8">Terms of Service</h1>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-playfair leading-tight text-black mb-8">Terms of Service</h1>
           <p className="text-gray-600 mb-8">Last updated: January 30, 2026</p>
 
           <div className="space-y-8 text-gray-700">
             <section>
-              <h2 className="text-2xl font-bold text-[#1E3A8A] mb-4">1. Ordering & Quotes</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-8">1. Ordering & Quotes</h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>All catering orders require a minimum of 48 hours advance notice (rush orders may be accommodated when possible)</li>
                 <li>Quotes are valid for 14 days from the date of issue</li>
@@ -36,7 +47,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-[#1E3A8A] mb-4">2. Payment Terms</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-8">2. Payment Terms</h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>A 50% deposit is required to confirm your order</li>
                 <li>Final payment is due 24 hours before the event</li>
@@ -47,7 +58,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-[#1E3A8A] mb-4">3. Cancellations & Changes</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-8">3. Cancellations & Changes</h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong>More than 7 days before event:</strong> Full refund minus 10% processing fee</li>
                 <li><strong>3-7 days before event:</strong> 50% refund</li>
@@ -59,7 +70,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-[#1E3A8A] mb-4">4. Delivery</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-8">4. Delivery</h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Delivery fee applies based on order size and location (typically $25-$50)</li>
                 <li>Delivery windows are 2-hour blocks (we will notify you 30 minutes before arrival)</li>
@@ -69,7 +80,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-[#1E3A8A] mb-4">5. Food Safety</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-8">5. Food Safety</h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>All food is prepared fresh using safe food handling practices</li>
                 <li>Hot food should be consumed within 2 hours of delivery or kept above 140°F</li>
@@ -80,7 +91,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-[#1E3A8A] mb-4">6. Allergies & Dietary Restrictions</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-8">6. Allergies & Dietary Restrictions</h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>We accommodate dietary needs (halal, vegetarian, vegan, gluten-free) when specified in advance</li>
                 <li>Customer must inform us of all allergies and dietary restrictions at time of order</li>
@@ -90,7 +101,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-[#1E3A8A] mb-4">7. Equipment & Rentals</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-8">7. Equipment & Rentals</h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Chafing dishes and serving equipment are available for rent</li>
                 <li>Rented equipment must be returned clean within 24 hours</li>
@@ -100,7 +111,7 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-[#1E3A8A] mb-4">8. Liability</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-8">8. Liability</h2>
               <p className="mb-4">Gyro City's liability is limited to:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Refund or replacement of defective food items</li>
@@ -111,12 +122,12 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-[#1E3A8A] mb-4">9. Force Majeure</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-8">9. Force Majeure</h2>
               <p>Gyro City is not liable for failure to perform due to circumstances beyond our reasonable control, including but not limited to: natural disasters, severe weather, power outages, strikes, or government restrictions.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-[#1E3A8A] mb-4">10. Contact</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-8">10. Contact</h2>
               <p className="mb-4">Questions about these terms? Contact us:</p>
               <div className="bg-gray-50 p-4 rounded-lg">
                 <p><strong>Email:</strong> info@gyrocity.ca</p>
@@ -126,14 +137,14 @@ export default function TermsPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-[#1E3A8A] mb-4">11. Changes to Terms</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-playfair text-black mb-8">11. Changes to Terms</h2>
               <p>Gyro City reserves the right to modify these terms at any time. Changes will be posted on this page with an updated date. Continued use of our services constitutes acceptance of updated terms.</p>
             </section>
           </div>
         </div>
       </section>
 
-      <footer className="bg-[#1E3A8A] text-white py-12 mt-12">
+      <footer className="bg-gray-900 text-white py-12 mt-12">
         <div className="container mx-auto px-4 text-center">
           <p>&copy; 2026 Gyro City. All rights reserved.</p>
         </div>
