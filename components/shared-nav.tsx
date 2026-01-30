@@ -11,8 +11,8 @@ export function SharedNav() {
   const isActive = (path: string) => pathname === path
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#1E3A8A]/95 backdrop-blur-lg text-white shadow-lg">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+    <nav className="sticky top-0 z-50 bg-[#0066FF] backdrop-blur-lg text-white shadow-lg">
+      <div className="container mx-auto px-4 py-5 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           <Image 
             src="/gyro-city-logo.png" 
@@ -24,42 +24,53 @@ export function SharedNav() {
           <span className="text-2xl font-bold font-playfair text-white">GYRO CITY</span>
         </Link>
         
-        <div className="hidden md:flex gap-8 items-center text-white">
+        <div className="hidden md:flex gap-10 items-center text-white">
           <Link 
-            href="/menu" 
-            className={`hover:text-[#B8860B] transition-colors duration-200 font-semibold ${
-              isActive('/menu') ? 'text-[#B8860B]' : 'text-white'
+            href="/" 
+            className={`hover:text-white/80 transition-colors duration-200 font-medium ${
+              isActive('/') ? 'underline underline-offset-4' : 'text-white'
             }`}
           >
-            Menu
-          </Link>
-          <Link 
-            href="/catering" 
-            className={`hover:text-[#B8860B] transition-colors duration-200 font-semibold ${
-              isActive('/catering') || pathname?.startsWith('/catering/') ? 'text-[#B8860B]' : 'text-white'
-            }`}
-          >
-            Catering
+            Home
           </Link>
           <Link 
             href="/about" 
-            className={`hover:text-[#B8860B] transition-colors duration-200 font-semibold ${
-              isActive('/about') ? 'text-[#B8860B]' : 'text-white'
+            className={`hover:text-white/80 transition-colors duration-200 font-medium ${
+              isActive('/about') ? 'underline underline-offset-4' : 'text-white'
             }`}
           >
-            About
+            About Us
           </Link>
           <Link 
-            href="/contact" 
-            className={`hover:text-[#B8860B] transition-colors duration-200 font-semibold ${
-              isActive('/contact') ? 'text-[#B8860B]' : 'text-white'
+            href="/catering/corporate" 
+            className={`hover:text-white/80 transition-colors duration-200 font-medium ${
+              pathname?.includes('/catering') ? 'underline underline-offset-4' : 'text-white'
             }`}
           >
-            Contact
+            Corporate Catering
           </Link>
-          <GyroButton href="/quote" variant="primary" className="px-6 py-2 text-base">
-            Get Quote
-          </GyroButton>
+          <Link 
+            href="/menu" 
+            className={`hover:text-white/80 transition-colors duration-200 font-medium ${
+              isActive('/menu') ? 'underline underline-offset-4' : 'text-white'
+            }`}
+          >
+            Our Menu
+          </Link>
+          <Link 
+            href="/catering/office" 
+            className={`hover:text-white/80 transition-colors duration-200 font-medium ${
+              isActive('/catering/office') ? 'underline underline-offset-4' : 'text-white'
+            }`}
+          >
+            Office Catering
+          </Link>
+          <Link 
+            href="/quote" 
+            className="bg-white text-[#0066FF] px-6 py-2.5 rounded-lg text-base font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg"
+          >
+            Get a Quote
+          </Link>
         </div>
       </div>
     </nav>

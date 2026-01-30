@@ -11,106 +11,91 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-gyro-navy/95 backdrop-blur-lg text-white shadow-lg">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <nav className="sticky top-0 z-50 bg-[#0066FF] backdrop-blur-lg text-white shadow-lg">
+        <div className="container mx-auto px-4 py-5 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
-            <Image 
-              src="/gyro-city-logo.png" 
-              alt="Gyro City" 
-              width={50} 
-              height={50} 
-              className="rounded-full group-hover:scale-110 transition-transform" 
-            />
-            <span className="text-2xl font-bold font-playfair">GYRO CITY</span>
+            <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded border-2 border-white">
+              <span className="text-xl font-bold text-white">LOGO</span>
+            </div>
           </Link>
-          <div className="hidden md:flex gap-8 items-center">
-            <Link href="/menu" className="hover:text-gyro-gold transition-colors duration-200 font-semibold">Menu</Link>
-            <Link href="/catering" className="hover:text-gyro-gold transition-colors duration-200 font-semibold">Catering</Link>
-            <Link href="/about" className="hover:text-gyro-gold transition-colors duration-200 font-semibold">About</Link>
-            <Link href="/contact" className="hover:text-gyro-gold transition-colors duration-200 font-semibold">Contact</Link>
-            <GyroButton href="/quote" variant="primary" className="px-6 py-2 text-base">
-              Get Quote
-            </GyroButton>
+          <div className="hidden md:flex gap-10 items-center">
+            <Link href="/" className="hover:text-white/80 transition-colors duration-200 font-medium underline underline-offset-4">Home</Link>
+            <Link href="/about" className="hover:text-white/80 transition-colors duration-200 font-medium">About Us</Link>
+            <Link href="/catering/corporate" className="hover:text-white/80 transition-colors duration-200 font-medium">Corporate Catering</Link>
+            <Link href="/menu" className="hover:text-white/80 transition-colors duration-200 font-medium">Our Menu</Link>
+            <Link href="/catering/office" className="hover:text-white/80 transition-colors duration-200 font-medium">Office Catering</Link>
+            <Link href="/quote" className="bg-white text-[#0066FF] px-6 py-2.5 rounded-lg text-base font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg">
+              Get a Quote
+            </Link>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-gyro-navy via-blue-900 to-gyro-navy text-white overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }} />
-        </div>
-
-        <div className="container mx-auto px-4 py-20 grid md:grid-cols-2 gap-12 items-center relative z-10">
+      <section className="relative min-h-screen flex items-center bg-[#0066FF] text-white overflow-hidden">
+        <div className="container mx-auto px-4 py-20 grid md:grid-cols-2 gap-16 items-center relative z-10">
           {/* Left: Text */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
+            className="space-y-8"
           >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-              className="inline-flex items-center gap-2 bg-gyro-gold/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-gyro-gold/30"
-            >
-              <span className="text-gyro-gold text-2xl">⭐⭐⭐⭐⭐</span>
-              <span className="text-sm font-semibold">4.9/5 · 500+ Events Catered</span>
-            </motion.div>
-
-            <h1 className="text-5xl md:text-7xl font-bold font-playfair mb-6 leading-tight">
-              Authentic Greek Catering
-              <span className="block text-gyro-gold mt-2">Delivered Fresh</span>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-playfair leading-tight">
+              Toronto's Authentic Greek Catering, Delivered.
             </h1>
             
-            <p className="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed">
-              Downtown Toronto's premier Greek catering service. Fresh gyros, souvlaki, and Mediterranean specialties for your office, corporate event, or celebration.
+            <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-xl">
+              Handcrafted gyros and Mediterranean classics for GTA events. Same-day delivery available for catering inquiries today.
             </p>
 
-            <div className="flex flex-wrap gap-4">
-              <GyroButton href="/quote" variant="primary">
-                Get Free Quote →
-              </GyroButton>
-              <GyroButton href="/menu" variant="secondary">
-                View Menu
-              </GyroButton>
+            <div className="pt-4">
+              <Link 
+                href="/quote" 
+                className="inline-block bg-white text-[#0066FF] px-10 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg"
+              >
+                Get a Quote
+              </Link>
             </div>
-
-            {/* Trust Badges */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.8, duration: 0.6 }}
-              className="mt-12 flex flex-wrap items-center gap-6 text-sm"
-            >
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">✓</span>
-                <span className="font-semibold">Halal Certified</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">✓</span>
-                <span className="font-semibold">Fresh Daily</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">✓</span>
-                <span className="font-semibold">Same-Day Delivery</span>
-              </div>
-            </motion.div>
           </motion.div>
 
-          {/* Right: Image Placeholder */}
+          {/* Right: Food Image */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-            className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl hidden md:block"
+            className="relative h-[600px] flex items-center justify-center hidden md:flex"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-gyro-gold/30 to-transparent"></div>
-            <div className="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold backdrop-blur-sm bg-gyro-navy/40">
-              [Fresh Gyro Platter Image]
+            <div className="relative w-full h-full flex items-center justify-center">
+              {/* Decorative white flowers */}
+              <div className="absolute top-0 left-0 text-8xl opacity-90">🌸</div>
+              
+              {/* Three catering trays */}
+              <div className="grid grid-cols-3 gap-6 relative z-10">
+                {/* Rice tray */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl aspect-square flex items-center justify-center border-4 border-gray-300">
+                  <div className="text-center">
+                    <div className="text-6xl mb-2">🍚</div>
+                    <p className="text-gray-700 font-semibold text-sm">Rice</p>
+                  </div>
+                </div>
+                
+                {/* Chicken tray */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl aspect-square flex items-center justify-center border-4 border-gray-300">
+                  <div className="text-center">
+                    <div className="text-6xl mb-2">🍗</div>
+                    <p className="text-gray-700 font-semibold text-sm">Chicken</p>
+                  </div>
+                </div>
+                
+                {/* Falafel tray */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl aspect-square flex items-center justify-center border-4 border-gray-300">
+                  <div className="text-center">
+                    <div className="text-6xl mb-2">🧆</div>
+                    <p className="text-gray-700 font-semibold text-sm">Falafel</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
