@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { AnimatedSection } from '@/components/ui/animated-section'
 import { useState } from 'react'
 
@@ -96,8 +97,15 @@ export default function QuotePage() {
       <nav className="sticky top-0 z-50 bg-[#0066FF] backdrop-blur-lg text-white shadow-lg">
         <div className="container mx-auto px-4 py-5 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded border-2 border-white">
-              <span className="text-xl font-bold text-white">LOGO</span>
+            <div className="bg-white px-4 py-2 rounded-lg shadow-sm">
+              <Image 
+                src="/gyro-city-logo-black.jpg" 
+                alt="Gyro City - Authentic Greek Catering" 
+                width={300} 
+                height={90} 
+                className="h-12 w-auto group-hover:opacity-80 transition-opacity" 
+                priority
+              />
             </div>
           </Link>
           <div className="hidden md:flex gap-10 items-center">
@@ -132,36 +140,37 @@ export default function QuotePage() {
         </div>
       )}
 
-      {/* Hero Section */}
-      <section className="bg-[#0066FF] text-white py-16">
+      {/* Hero Section with Integrated Urgent Call */}
+      <section className="bg-[#0066FF] text-white py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          {/* Main Quote Header */}
+          <div className="max-w-5xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-playfair leading-tight mb-6">
               Get Your Free Catering Quote
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90">
+            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
               Tell us about your event and we'll create a custom quote within 24 hours. No obligation, transparent pricing.
             </p>
           </div>
-        </div>
-      </section>
 
-      {/* Urgent Needs Section */}
-      <section className="py-10 bg-[#0066FF] text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold font-playfair mb-4 italic">
-            Need Catering Urgently?
-          </h2>
-          <p className="text-lg mb-6">
-            Don't have time for the form? Call us directly!
-          </p>
-          
-          <a 
-            href="tel:+16473408001" 
-            className="inline-block bg-white text-[#0066FF] px-8 py-3 rounded-lg text-xl font-bold hover:bg-gray-100 transition-all shadow-lg"
-          >
-            📞 Call +1 (647) 340-8001
-          </a>
+          {/* Urgent Needs Card - Integrated */}
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-md border-4 border-white/30 rounded-3xl p-8 md:p-12">
+              <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-4 italic">
+                Need Catering Urgently?
+              </h2>
+              <p className="text-lg md:text-xl mb-8 text-white/90">
+                Don't have time for the form? Call us directly!
+              </p>
+              
+              <a 
+                href="tel:+16473408001" 
+                className="inline-block bg-white text-[#0066FF] px-10 py-4 rounded-2xl text-xl md:text-2xl font-bold hover:bg-gray-100 transition-all shadow-2xl hover:scale-105 border-4 border-white"
+              >
+                📞 Call +1 (647) 340-8001
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
